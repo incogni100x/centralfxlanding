@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CapiRocket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        .gradient-text {
+            background: -webkit-linear-gradient(45deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out forwards;
+            opacity: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(100%);
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        @font-face {
+            font-family: 'Dauphin';
+            src: url('Dauphin.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .font-dauphin {
+            font-family: 'Dauphin', sans-serif !important;
+        }
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 smooth-scroll">
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-black bg-opacity-60 z-40 lg:hidden opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 bg-gray-800 z-50 lg:hidden mobile-menu">
+        <div class="p-6 flex flex-col h-full">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logo-gradient-mobile" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#3b82f6"/>
+                                <stop offset="100%" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                        <g stroke="url(#logo-gradient-mobile)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                        </g>
+                    </svg>
+                    <span class="text-2xl font-bold text-white font-dauphin">CapiRocket</span>
+                </div>
+                <button id="mobile-menu-close-btn" class="p-2 text-gray-400 hover:text-white">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <div class="flex-grow flex items-center justify-center">
+                <nav class="space-y-6 text-center">
+                    <a href="index.html" class="block text-2xl font-medium text-gray-300 hover:text-white transition-colors py-2">Home</a>
+                    <a href="about.html" class="block text-2xl font-medium text-gray-300 hover:text-white transition-colors py-2">About Us</a>
+                    <a href="contact.html" class="block text-2xl font-medium text-white transition-colors py-2">Contact</a>
+                </nav>
+            </div>
+            <div class="pt-6 border-t border-gray-700 space-y-4">
+                <a href="#" class="block w-full text-center text-gray-300 hover:text-white transition-colors py-3 rounded-lg border border-gray-600">Sign In</a>
+                <a href="#" class="block w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg transition-colors text-center font-semibold">
+                   Get Started
+               </a>
+           </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 border-b border-gray-800 sticky top-0 z-30 backdrop-blur-md">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <div class="flex items-center gap-3">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logo-gradient-header" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#3b82f6"/>
+                                <stop offset="100%" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                        <g stroke="url(#logo-gradient-header)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                        </g>
+                    </svg>
+                    <span class="text-2xl font-bold text-white font-dauphin">CapiRocket</span>
+                </div>
+
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+                    <a href="contact.html" class="text-white font-semibold transition-colors">Contact</a>
+                </nav>
+
+                <div class="flex items-center gap-4">
+                    <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-400 hover:text-white">
+                        <i data-lucide="menu" class="w-5 h-5"></i>
+                    </button>
+                    <a href="#" class="hidden sm:inline-flex px-4 py-2 text-gray-400 hover:text-white transition-colors">
+                        Sign In
+                    </a>
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors hidden md:flex items-center gap-2">
+                        Get Started
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="relative overflow-hidden bg-gray-900 py-16 lg:py-24">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900/30 opacity-50"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="space-y-6 fade-in">
+                    <div class="inline-flex items-center gap-2 bg-gray-800 text-blue-400 px-4 py-2 rounded-full text-sm font-medium border border-gray-700">
+                        <i data-lucide="headphones" class="w-4 h-4"></i>
+                        24/7 Support
+                    </div>
+                    <h1 class="text-4xl lg:text-6xl font-bold text-white leading-tight">
+                        Get in Touch with
+                        <span class="gradient-text">CapiRocket</span>
+                    </h1>
+                    <p class="text-xl text-gray-400 leading-relaxed max-w-3xl mx-auto">
+                        Have questions about our platform? Need help with your account? Our dedicated support team is here to assist you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 lg:py-24 bg-gray-800/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                <!-- Form -->
+                <div class="bg-gray-800/80 rounded-2xl p-8 border border-gray-700 backdrop-blur-sm fade-in">
+                    <h2 class="text-3xl font-bold text-white mb-6">Send Us a Message</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-400 mb-2">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition-all" placeholder="John">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-400 mb-2">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition-all" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition-all" placeholder="you@example.com">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-400 mb-2">Subject *</label>
+                            <select id="subject" name="subject" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition-all">
+                                <option>Account Support</option>
+                                <option>Technical Issues</option>
+                                <option>Savings Plans</option>
+                                <option>Feedback</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition-all resize-none" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
+                            <span>Send Message</span>
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                        </button>
+                    </form>
+                </div>
+                <!-- Contact Info -->
+                <div class="space-y-8 fade-in" style="animation-delay: 0.2s;">
+                    <div class="bg-gray-800/80 rounded-2xl p-8 border border-gray-700">
+                        <h3 class="text-2xl font-bold text-white mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-blue-900/50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="mail" class="w-6 h-6 text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Email Us</h4>
+                                    <p class="text-gray-400">Our team will get back to you within 24 hours.</p>
+                                    <a href="mailto:support@ctrocket.com" class="text-blue-400 hover:underline">support@ctrocket.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-blue-900/50 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="message-square" class="w-6 h-6 text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Live Chat</h4>
+                                    <p class="text-gray-400">Get instant support from our team.</p>
+                                    <a href="#" class="text-blue-400 hover:underline">Start a Chat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 lg:py-24 bg-gray-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">Find quick answers to common questions about CapiRocket.</p>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-800 rounded-lg fade-in">
+                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-white">How do I create an account?</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content px-6 pb-6">
+                        <p class="text-gray-400">You can create an account by clicking the "Get Started" button on our homepage. The process is fast, secure, and only takes a few minutes.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-800 rounded-lg fade-in">
+                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-white">What are the fees for trading?</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content px-6 pb-6">
+                        <p class="text-gray-400">We offer a competitive and transparent fee structure. Trading fees start as low as 0.1% and decrease with higher trading volumes. There are no hidden fees.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-800 rounded-lg fade-in">
+                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-white">Is my crypto safe with CapiRocket?</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content px-6 pb-6">
+                        <p class="text-gray-400">Security is our top priority. We use industry-leading security measures, including cold storage for the majority of assets, multi-factor authentication, and continuous monitoring to protect your funds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <defs>
+                                <linearGradient id="logo-gradient-footer" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#3b82f6"/>
+                                    <stop offset="100%" stop-color="#8b5cf6"/>
+                                </linearGradient>
+                            </defs>
+                            <g stroke="url(#logo-gradient-footer)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                            </g>
+                        </svg>
+                        <span class="text-2xl font-bold font-dauphin">CapiRocket</span>
+                    </div>
+                    <p class="text-gray-400">
+                        The modern crypto platform that puts you in control.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Company</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <div><a href="about.html" class="hover:text-white transition-colors">About Us</a></div>
+                        <div><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Legal</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <div><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></div>
+                        <div><a href="#" class="hover:text-white transition-colors">Terms of Service</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 text-sm">© 2024 CapiRocket. All rights reserved.</div>
+                <div class="flex items-center gap-6 text-gray-400 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+      
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenuCloseBtn = document.getElementById('mobile-menu-close-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileOverlay = document.getElementById('mobile-overlay');
+      const mobileNavLinks = mobileMenu.querySelectorAll('a');
+
+      function openMenu() {
+        mobileMenu.classList.add('active');
+        mobileOverlay.classList.remove('opacity-0', 'pointer-events-none');
+      }
+
+      function closeMenu() {
+        mobileMenu.classList.remove('active');
+        mobileOverlay.classList.add('opacity-0', 'pointer-events-none');
+      }
+
+      mobileMenuBtn.addEventListener('click', openMenu);
+      mobileMenuCloseBtn.addEventListener('click', closeMenu);
+      mobileOverlay.addEventListener('click', closeMenu);
+      mobileNavLinks.forEach(link => link.addEventListener('click', closeMenu));
+      
+      // FAQ Accordion
+      document.querySelectorAll('.faq-toggle').forEach(button => {
+          button.addEventListener('click', () => {
+              const content = button.nextElementSibling;
+              const icon = button.querySelector('i');
+              
+              if (content.style.maxHeight) {
+                  content.style.maxHeight = null;
+                  icon.style.transform = 'rotate(0deg)';
+              } else {
+                  document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
+                  document.querySelectorAll('.faq-toggle i').forEach(i => i.style.transform = 'rotate(0deg)');
+                  content.style.maxHeight = content.scrollHeight + "px";
+                  icon.style.transform = 'rotate(180deg)';
+              }
+          });
+      });
+    </script>
+</body>
+</html> 
