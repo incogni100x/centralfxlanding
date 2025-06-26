@@ -1,0 +1,34 @@
+{
+  "name": "ctrockethompage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incogni100x/ctland.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/incogni100x/ctland/issues"
+  },
+  "homepage": "https://github.com/incogni100x/ctland#readme",
+  "description": "",
+  "dependencies": {
+    "lucide": "^0.523.0",
+    "swiper": "^11.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.10",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.0.0"
+  }
+}

@@ -7,50 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'IBM Plex Sans', sans-serif;
-        }
-        .gradient-text {
-            background: -webkit-linear-gradient(45deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .smooth-scroll {
-            scroll-behavior: smooth;
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in-out forwards;
-            opacity: 0;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .mobile-menu {
-            transition: transform 0.3s ease-in-out;
-            transform: translateX(100%);
-        }
-        .mobile-menu.active {
-            transform: translateX(0);
-        }
-        @font-face {
-            font-family: 'Dauphin';
-            src: url('Dauphin.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        .font-dauphin {
-            font-family: 'Dauphin', sans-serif !important;
-        }
-        .faq-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-in-out;
-        }
-    </style>
+    <script type="module" src="/src/main.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-200 smooth-scroll">
     <!-- Mobile Menu Overlay -->
@@ -335,48 +292,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-      lucide.createIcons();
-      
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenuCloseBtn = document.getElementById('mobile-menu-close-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const mobileOverlay = document.getElementById('mobile-overlay');
-      const mobileNavLinks = mobileMenu.querySelectorAll('a');
-
-      function openMenu() {
-        mobileMenu.classList.add('active');
-        mobileOverlay.classList.remove('opacity-0', 'pointer-events-none');
-      }
-
-      function closeMenu() {
-        mobileMenu.classList.remove('active');
-        mobileOverlay.classList.add('opacity-0', 'pointer-events-none');
-      }
-
-      mobileMenuBtn.addEventListener('click', openMenu);
-      mobileMenuCloseBtn.addEventListener('click', closeMenu);
-      mobileOverlay.addEventListener('click', closeMenu);
-      mobileNavLinks.forEach(link => link.addEventListener('click', closeMenu));
-      
-      // FAQ Accordion
-      document.querySelectorAll('.faq-toggle').forEach(button => {
-          button.addEventListener('click', () => {
-              const content = button.nextElementSibling;
-              const icon = button.querySelector('i');
-              
-              if (content.style.maxHeight) {
-                  content.style.maxHeight = null;
-                  icon.style.transform = 'rotate(0deg)';
-              } else {
-                  document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
-                  document.querySelectorAll('.faq-toggle i').forEach(i => i.style.transform = 'rotate(0deg)');
-                  content.style.maxHeight = content.scrollHeight + "px";
-                  icon.style.transform = 'rotate(180deg)';
-              }
-          });
-      });
-    </script>
 </body>
 </html> 

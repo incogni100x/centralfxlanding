@@ -7,73 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'IBM Plex Sans', sans-serif;
-        }
-        .gradient-text {
-            background: -webkit-linear-gradient(45deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .smooth-scroll {
-            scroll-behavior: smooth;
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in-out forwards;
-            opacity: 0;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .mobile-menu {
-            transition: transform 0.3s ease-in-out;
-            transform: translateX(100%);
-        }
-        .mobile-menu.active {
-            transform: translateX(0);
-        }
-        @font-face {
-            font-family: 'Dauphin';
-            src: url('Dauphin.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        .font-dauphin {
-            font-family: 'Dauphin', sans-serif !important;
-        }
-        .legal-content h2 {
-            font-size: 1.875rem;
-            font-weight: 700;
-            color: #fff;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid #374151;
-            padding-bottom: 0.5rem;
-        }
-        .legal-content h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #fff;
-            margin-top: 2rem;
-            margin-bottom: 0.75rem;
-        }
-        .legal-content p, .legal-content li {
-            line-height: 1.75;
-            margin-bottom: 1rem;
-        }
-        .legal-content ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-        }
-        .legal-content a {
-            color: #60a5fa;
-            text-decoration: underline;
-        }
-    </style>
+    <script type="module" src="/src/main.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-400 smooth-scroll">
     <!-- Header (same as other pages) -->
@@ -216,9 +150,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-      lucide.createIcons();
-    </script>
 </body>
 </html> 

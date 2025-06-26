@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Dauphin';
+    src: url('/Dauphin.ttf') format('truetype'); /* Vite will serve from public dir */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.gradient-text {
+    background: -webkit-linear-gradient(45deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
+.card-hover {
+    transition: all 0.3s ease-in-out;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px #4a5568;
+}
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.mobile-menu {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+.mobile-menu.active {
+    transform: translateX(0);
+}
+.font-dauphin {
+    font-family: 'Dauphin', sans-serif !important;
+}
+
+/* From contact.html */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* From privacy.html & terms.html */
+.legal-content h2 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    color: #fff; /* text-white */
+    margin-top: 2.5rem; /* mt-10 */
+    margin-bottom: 1rem; /* mb-4 */
+    border-bottom: 1px solid #374151; /* border-b border-gray-700 */
+    padding-bottom: 0.5rem; /* pb-2 */
+}
+.legal-content h3 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+    color: #fff;
+    margin-top: 2rem; /* mt-8 */
+    margin-bottom: 0.75rem; /* mb-3 */
+}
+.legal-content p, .legal-content li {
+    line-height: 1.75; /* leading-loose */
+    margin-bottom: 1rem;
+}
+.legal-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem; /* pl-6 */
+}
+.legal-content a {
+    color: #60a5fa; /* text-blue-400 */
+    text-decoration: underline;
+} 

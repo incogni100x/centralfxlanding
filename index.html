@@ -7,53 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'IBM Plex Sans', sans-serif;
-        }
-        .gradient-text {
-            background: -webkit-linear-gradient(45deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .smooth-scroll {
-            scroll-behavior: smooth;
-        }
-        .card-hover {
-            transition: all 0.3s ease-in-out;
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px #4a5568;
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in-out forwards;
-            opacity: 0;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .mobile-menu {
-            transition: transform 0.3s ease-in-out;
-            transform: translateX(100%);
-        }
-        .mobile-menu.active {
-            transform: translateX(0);
-        }
-        @font-face {
-            font-family: 'Dauphin';
-            src: url('Dauphin.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        .font-dauphin {
-            font-family: 'Dauphin', sans-serif !important;
-        }
-    </style>
+    <script type="module" src="/src/main.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-200 smooth-scroll">
     <!-- Mobile Menu Overlay -->
@@ -309,7 +263,7 @@
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="crypto-cards-container">
-                <!-- Bitcoin Card (Featured) -->
+                <!-- VeChain Card (Featured) -->
                 <div class="bg-gradient-to-br from-gray-800 to-blue-900/50 border-blue-500 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:shadow-blue-400/40 relative scale-105 hover:scale-[1.07] shadow-lg">
                     <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
                         <div class="bg-blue-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold shadow-md">TRENDING</div>
@@ -319,25 +273,34 @@
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path fill="#F7931A" d="M18.011 10.432c.249-1.684-1.026-2.582-2.782-3.192l.568-2.27-1.387-.345-.553 2.214-1.107-.265.561-2.23L11.924 4l-.57 2.278-.881-.209v-.008L8.556 5.58l-.37 1.483s1.027.242 1.011.25c.562.144.658.513.642.801l-.642 2.599.145.048-.153-.032-.906 3.633c-.064.169-.241.425-.633.32.015.025-1.003-.24-1.003-.24l-.69 1.58 1.805.449.986.257-.577 2.302 1.387.344.562-2.277 1.114.288-.569 2.27 1.387.345.57-2.302c2.365.449 4.146.273 4.892-1.869.602-1.724-.032-2.71-1.275-3.368.906-.2 1.588-.802 1.764-2.03zm-3.168 4.443c-.425 1.725-3.328.786-4.266.561l.762-3.055c.938.24 3.954.698 3.504 2.486zm.425-4.467c-.385 1.564-2.807.77-3.585.578l.69-2.768c.786.193 3.304.562 2.896 2.19"></path>
+                                        <path fill="url(#VET__a)" d="M20 4.75h-1.43c-.35 0-.665.2-.82.515L14 13.035l-.005-.005-1 2.07v.01l-1 2.07L7 6.825h1.425c.35 0 .67.2.82.515l3.265 6.715 1-2.07-2.635-5.425a3.21 3.21 0 0 0-2.89-1.81H4l1 2.075 6 12.425h2z"/>
+                                        <defs>
+                                            <linearGradient id="VET__a" x1="4" x2="19.153" y1="19.638" y2="2.35" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#582974"/>
+                                                <stop offset=".15" stop-color="#4163AD"/>
+                                                <stop offset=".47" stop-color="#22B2F9"/>
+                                                <stop offset=".74" stop-color="#54B1B6"/>
+                                                <stop offset="1" stop-color="#86E931"/>
+                                            </linearGradient>
+                                        </defs>
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white text-lg">Bitcoin</h3>
-                                    <p class="text-sm text-gray-400">BTC</p>
+                                    <h3 class="font-bold text-white text-lg">VeChain</h3>
+                                    <p class="text-sm text-gray-400">VET</p>
                                 </div>
                             </div>
                             <div class="text-right">
-                                <p class="text-xl font-bold text-white">$67,543.21</p>
+                                <p class="text-xl font-bold text-white">$0.035</p>
                             </div>
                         </div>
                         <div class="mb-6">
                             <div class="flex justify-between items-center mb-2">
                                 <span class="text-xs font-semibold text-gray-300 uppercase tracking-wider">Guaranteed APY</span>
-                                <span class="text-base font-bold text-green-400">4.5%</span>
+                                <span class="text-base font-bold text-green-400">68%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-gradient-to-r from-green-400 to-teal-400 h-2.5 rounded-full" style="width: 45%"></div>
+                                <div class="bg-gradient-to-r from-green-400 to-teal-400 h-2.5 rounded-full" style="width: 55%"></div>
                             </div>
                         </div>
                     </div>
@@ -347,44 +310,40 @@
                     </div>
                 </div>
 
-                <!-- Ethereum Card -->
+                <!-- Aptos Card -->
                 <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:border-blue-500 hover:shadow-blue-500/20 hover:-translate-y-2">
                     <div class="flex-grow">
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <g clip-path="url(#ETH__a)">
-                                            <path fill="#fff" d="M12 4v5.912l5 2.236z"></path>
-                                            <path fill="#fff" d="m12 4-5 8.148 5-2.236z"></path>
-                                            <path fill="#fff" d="M12 15.98V20l5-6.92z"></path>
-                                            <path fill="#fff" d="M12 20v-4.02l-5-2.9z"></path>
-                                            <path fill="#fff" d="m12 15.048 5-2.9-5-2.236z"></path>
-                                            <path fill="#fff" d="m7 12.148 5 2.9V9.912z"></path>
+                                        <g clip-path="url(#aptos__a)">
+                                            <path fill="#000" d="M24 0H0v24h24z"/>
+                                            <path fill="#fff" d="M14.965 9.352a.57.57 0 0 1-.43-.194l-.571-.645a.45.45 0 0 0-.673 0l-.49.554a.85.85 0 0 1-.633.285H4.45a8 8 0 0 0-.42 1.975h7.285c.128 0 .25-.052.339-.144l.679-.708a.45.45 0 0 1 .324-.139h.028c.128 0 .25.055.336.152l.572.646a.57.57 0 0 0 .429.193h5.946a8 8 0 0 0-.42-1.975zM8.44 15.479c.128 0 .25-.052.339-.145l.678-.708a.45.45 0 0 1 .324-.138h.028c.129 0 .251.055.337.151l.571.646a.57.57 0 0 0 .43.194h8.058a8 8 0 0 0 .655-1.994h-7.735a.57.57 0 0 1-.43-.194l-.571-.646a.45.45 0 0 0-.673 0l-.49.555a.85.85 0 0 1-.634.285H4.141c.131.702.352 1.37.654 1.994zm5.717-8.284c.128 0 .25-.052.339-.145l.678-.707a.45.45 0 0 1 .324-.139h.028c.129 0 .252.055.337.152l.571.645c.11.123.265.194.43.194h1.532A7.99 7.99 0 0 0 12 4a7.99 7.99 0 0 0-6.396 3.195zM8.983 17.456a.57.57 0 0 1-.43-.194l-.571-.646a.45.45 0 0 0-.673 0l-.49.555a.85.85 0 0 1-.634.285h-.033A7.97 7.97 0 0 0 12 20c2.309 0 4.387-.98 5.848-2.544z"/>
                                         </g>
                                         <defs>
-                                            <clipPath id="ETH__a">
-                                                <path fill="#fff" d="M0 0h24v24H0z"></path>
+                                            <clipPath id="aptos__a">
+                                                <path fill="#fff" d="M0 0h24v24H0z"/>
                                             </clipPath>
                                         </defs>
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white text-lg">Ethereum</h3>
-                                    <p class="text-sm text-gray-400">ETH</p>
+                                    <h3 class="font-bold text-white text-lg">Aptos</h3>
+                                    <p class="text-sm text-gray-400">APT</p>
                                 </div>
                             </div>
                             <div class="text-right">
-                                <p class="text-xl font-bold text-white">$3,498.76</p>
+                                <p class="text-xl font-bold text-white">$8.50</p>
                             </div>
                         </div>
                         <div class="mb-6">
                             <div class="flex justify-between items-center mb-2">
                                 <span class="text-xs font-semibold text-gray-300 uppercase tracking-wider">Guaranteed APY</span>
-                                <span class="text-base font-bold text-green-400">5.2%</span>
+                                <span class="text-base font-bold text-green-400">52%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-gradient-to-r from-green-400 to-teal-400 h-2.5 rounded-full" style="width: 52%"></div>
+                                <div class="bg-gradient-to-r from-green-400 to-teal-400 h-2.5 rounded-full" style="width: 62%"></div>
                             </div>
                         </div>
                     </div>
@@ -394,40 +353,41 @@
                     </div>
                 </div>
 
-                <!-- Tether Card -->
+                <!-- DeXe Card -->
                 <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:border-blue-500 hover:shadow-blue-500/20 hover:-translate-y-2">
                     <div class="flex-grow">
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center p-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <g clip-path="url(#USDT__a)">
-                                            <path fill="#26A17B" d="M12 18.4l-8-7.892L7.052 5.6h9.896L20 10.508z"></path>
-                                            <path fill="#fff" d="m12.8 11.2v-.976c1.44.072 2.784.352 3.2.716-.484.424-2.216.732-4 .732s-3.516-.308-4-.732c.412-.364 1.76-.64 3.2-.72v.98zm-4.8.264v.588c.412.364 1.756.64 3.2.72V14.4h1.6v-2.16c1.44-.072 2.788-.352 3.2-.716v-1.172c-.412-.364-1.76-.644-3.2-.72V8.8h2.4V7.6H8.8v1.2h2.4v.832c-1.444.076-2.788.356-3.2.72z"></path>
+                                        <g clip-path="url(#DEXE__a)">
+                                            <path fill="#000" d="M24 0H0v24h24z"/>
+                                            <path fill="#fff" d="m14.432 6.608-2.128 2.12a.43.43 0 0 1-.608 0l-2.124-2.12L6.528 6l4.448 4.436c.56.568 1.564.484 2.132-.08L17.472 6zM14 15.96v-3.008c0-.228.292-.548.528-.548h2.944L20 10.8h-6.176c-.784 0-1.424.764-1.424 1.56V18l1.6-2.044zM9.488 12.4H6.532L4 10.8h6.064c.784 0 1.536.652 1.536 1.452V18L10 15.952v-3c0-.232-.28-.552-.512-.552"/>
                                         </g>
                                         <defs>
-                                            <clipPath id="USDT__a">
-                                                <path fill="#fff" d="M0 0h24v24H0z"></path>
+                                            <clipPath id="DEXE__a">
+                                                <path fill="#fff" d="M0 0h24v24H0z"/>
                                             </clipPath>
                                         </defs>
                                     </svg>
+                                    
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white text-lg">Tether</h3>
-                                    <p class="text-sm text-gray-400">USDT</p>
+                                    <h3 class="font-bold text-white text-lg">DeXe</h3>
+                                    <p class="text-sm text-gray-400">DEXE</p>
                                 </div>
                             </div>
                             <div class="text-right">
-                                <p class="text-xl font-bold text-white">$1.00</p>
+                                <p class="text-xl font-bold text-white">$11.20</p>
                             </div>
                         </div>
                         <div class="mb-6">
                             <div class="flex justify-between items-center mb-2">
                                 <span class="text-xs font-semibold text-gray-300 uppercase tracking-wider">Guaranteed APY</span>
-                                <span class="text-base font-bold text-green-400">2.1%</span>
+                                <span class="text-base font-bold text-green-400">45%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-gradient-to-r from-green-400 to-teal-400 h-2.5 rounded-full" style="width: 21%"></div>
+                                <div class="bg-gradient-to-r from-green-400 to-teal-400 h-2.5 rounded-full" style="width: 48%"></div>
                             </div>
                         </div>
                     </div>
@@ -818,55 +778,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      lucide.createIcons();
-      
-      // Mobile menu
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenuCloseBtn = document.getElementById('mobile-menu-close-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const mobileOverlay = document.getElementById('mobile-overlay');
-      const mobileNavLinks = mobileMenu.querySelectorAll('a');
-
-      function openMenu() {
-        mobileMenu.classList.add('active');
-        mobileOverlay.classList.remove('opacity-0', 'pointer-events-none');
-      }
-
-      function closeMenu() {
-        mobileMenu.classList.remove('active');
-        mobileOverlay.classList.add('opacity-0', 'pointer-events-none');
-      }
-
-      mobileMenuBtn.addEventListener('click', openMenu);
-      mobileMenuCloseBtn.addEventListener('click', closeMenu);
-      mobileOverlay.addEventListener('click', closeMenu);
-      mobileNavLinks.forEach(link => link.addEventListener('click', closeMenu));
-
-      // Testimonial Swiper
-      const swiper = new Swiper('.testimonial-swiper', {
-          loop: true,
-          slidesPerView: 1,
-          spaceBetween: 32,
-          autoplay: {
-              delay: 5000,
-              disableOnInteraction: false,
-          },
-          pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-          },
-          breakpoints: {
-              768: {
-                  slidesPerView: 2,
-              },
-              1024: {
-                  slidesPerView: 3,
-              }
-          }
-      });
-    </script>
 </body>
 </html>
