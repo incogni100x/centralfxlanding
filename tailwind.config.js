@@ -4,7 +4,21 @@ export default {
     "./*.{html,js}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['IBM Plex Sans', 'sans-serif'],
+        dauphin: ['Dauphin', 'sans-serif'],
+      },
+      keyframes: {
+        'bounce-float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-15px)' },
+        }
+      },
+      animation: {
+        'bounce-float': 'bounce-float 3s ease-in-out infinite',
+      }
+    },
   },
   plugins: [],
 } 
