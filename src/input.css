@@ -2,15 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Dauphin';
-    src: url('/Dauphin.ttf') format('truetype'); /* Vite will serve from public dir */
-    font-weight: normal;
-    font-style: normal;
-}
 
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .gradient-text {
     background: -webkit-linear-gradient(45deg, #3b82f6, #8b5cf6);

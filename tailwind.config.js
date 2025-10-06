@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['IBM Plex Sans', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
         dauphin: ['Dauphin', 'sans-serif'],
       },
       keyframes: {

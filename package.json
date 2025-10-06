@@ -1,5 +1,5 @@
 {
-  "name": "ctrockethompage",
+  "name": "centralfxlanding",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/incogni100x/ctland.git"
+    "url": "git+https://github.com/incogni100x/centralfxlanding.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/incogni100x/ctland/issues"
+    "url": "https://github.com/incogni100x/centralfxlanding/issues"
   },
-  "homepage": "https://github.com/incogni100x/ctland#readme",
+  "homepage": "https://github.com/incogni100x/centralfxlanding#readme",
   "description": "",
   "dependencies": {
     "lucide": "^0.523.0",

@@ -6,46 +6,34 @@
     <title>CapiRocket - Trade and Invest in Cryptocurrency with Confidence</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <script type="module" src="/src/main.js"></script>
 </head>
-<body class="bg-gray-900 text-gray-200 smooth-scroll">
+<body class="bg-black text-gray-200 smooth-scroll">
     <!-- Mobile Menu Overlay -->
     <div id="mobile-overlay" class="fixed inset-0 bg-black bg-opacity-60 z-40 lg:hidden opacity-0 pointer-events-none transition-opacity duration-300"></div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 bg-gray-800 z-50 lg:hidden mobile-menu">
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 bg-black z-50 lg:hidden mobile-menu">
         <div class="p-6 flex flex-col h-full">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="logo-gradient-mobile" x1="0" y1="0" x2="1" y2="1">
-                                <stop offset="0%" stop-color="#3b82f6"/>
-                                <stop offset="100%" stop-color="#8b5cf6"/>
-                            </linearGradient>
-                        </defs>
-                        <g stroke="url(#logo-gradient-mobile)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
-                            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
-                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
-                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
-                        </g>
-                    </svg>
-                    <span class="text-2xl font-bold text-white font-dauphin">CapiRocket</span>
+                    <span class="text-2xl font-bold text-white" style="font-family: 'Instrument Serif', serif;">CapiRocket</span>
                 </div>
                 <button id="mobile-menu-close-btn" class="p-2 text-gray-400 hover:text-white">
                     <i data-lucide="x" class="w-5 h-5"></i>
                 </button>
             </div>
             <div class="flex-grow flex items-center justify-center">
-                <nav class="space-y-6 text-center">
+                <nav class="space-y-6 text-center" style="font-family: 'Inter', sans-serif;">
                     <a href="index.html" class="block text-2xl font-medium text-gray-300 hover:text-white transition-colors py-2">Home</a>
                     <a href="about.html" class="block text-2xl font-medium text-gray-300 hover:text-white transition-colors py-2">About Us</a>
                     <a href="contact.html" class="block text-2xl font-medium text-gray-300 hover:text-white transition-colors py-2">Contact</a>
                 </nav>
             </div>
-            <div class="pt-6 border-t border-gray-700 space-y-4">
+            <div class="pt-6 border-t border-gray-700 space-y-4" style="font-family: 'Inter', sans-serif;">
                 <a href="https://app.capirocket.net/login.html" class="block w-full text-center text-gray-300 hover:text-white transition-colors py-3 rounded-lg border border-gray-600">Sign In</a>
                 <a href="https://app.capirocket.net/register.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg transition-colors text-center font-semibold">
                    Get Started
@@ -55,25 +43,11 @@
     </div>
 
     <!-- Header -->
-    <header class="bg-gray-900/80 border-b border-gray-800 sticky top-0 z-30 backdrop-blur-md">
+    <header class="bg-black/80 sticky top-0 z-30 backdrop-blur-md">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 lg:h-20">
                 <div class="flex items-center gap-3">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="logo-gradient-header" x1="0" y1="0" x2="1" y2="1">
-                                <stop offset="0%" stop-color="#3b82f6"/>
-                                <stop offset="100%" stop-color="#8b5cf6"/>
-                            </linearGradient>
-                        </defs>
-                        <g stroke="url(#logo-gradient-header)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
-                            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
-                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
-                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
-                        </g>
-                    </svg>
-                    <span class="text-2xl font-bold text-white font-dauphin">CapiRocket</span>
+                    <span class="text-2xl font-bold text-white" style="font-family: 'Instrument Serif', serif;">CapiRocket</span>
                 </div>
 
                 <nav class="hidden md:flex items-center gap-8">
@@ -99,20 +73,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-gray-900 py-16 lg:py-24">
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900/30 opacity-50"></div>
+    <section class="relative overflow-hidden bg-black py-16 lg:py-24">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div class="space-y-8 fade-in">
                     <div class="space-y-6">
-                        <div class="inline-flex items-center gap-2 bg-gray-800 text-blue-400 px-4 py-2 rounded-full text-sm font-medium border border-gray-700">
+                        <div class="inline-flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full text-sm font-medium border border-gray-700" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
                             <i data-lucide="zap" class="w-4 h-4"></i>
                             The Future of Crypto is Here
                         </div>
-                        <h1 class="text-4xl lg:text-6xl font-bold text-white leading-tight">
-                            Trade and Invest In <span class="gradient-text">Cryptocurrency</span> With Confidence
+                        <h1 class="text-4xl lg:text-6xl font-bold leading-tight" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">
+                            Trade and Invest In Cryptocurrency With Confidence
                         </h1>
-                        <p class="text-xl text-gray-400 leading-relaxed">
+                        <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
                             CapiRocket is your all-in-one platform for buying, selling, and growing your crypto assets. Benefit from high-yield savings and a powerful, user-friendly dashboard.
                         </p>
                     </div>
@@ -122,7 +96,7 @@
                             Create Account
                             <i data-lucide="arrow-right" class="w-5 h-5"></i>
                         </a>
-                        <a href="#plans" class="border border-gray-600 text-gray-300 hover:bg-gray-800 font-semibold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2">
+                        <a href="#plans" class="border border-gray-600 hover:bg-gray-800 font-semibold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
                             Explore Plans
                         </a>
                     </div>
@@ -135,8 +109,8 @@
                             <!-- Header -->
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h3 class="font-bold text-white">My Portfolio</h3>
-                                    <p class="text-sm text-gray-400">Welcome back, John D.</p>
+                                    <h3 class="font-bold" style="color: #F6F8FA;">My Portfolio</h3>
+                                    <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Welcome back, John D.</p>
                                 </div>
                                 <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                                     <span class="text-white font-semibold text-xs">JD</span>
@@ -145,7 +119,7 @@
 
                             <!-- Balance Cards -->
                             <div class="grid grid-cols-2 gap-3">
-                                <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl p-4 text-white">
+                                <div class="bg-gray-800 rounded-xl p-4 text-white">
                                     <p class="text-blue-200 text-xs mb-1">Total Balance</p>
                                     <p class="text-lg font-bold">$15,830.50</p>
                                     <div class="flex items-center gap-2 mt-2">
@@ -153,7 +127,7 @@
                                         <span class="text-blue-200 text-xs">Wallet</span>
                                     </div>
                                 </div>
-                                <div class="bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl p-4 text-white">
+                                <div class="bg-gray-800 rounded-xl p-4 text-white">
                                     <p class="text-purple-200 text-xs mb-1">Time Deposits</p>
                                     <p class="text-lg font-bold">$8,120.00</p>
                                     <div class="flex items-center gap-1 mt-2">
@@ -166,8 +140,8 @@
                             <!-- Mini Chart -->
                             <div class="bg-gray-700/50 rounded-lg p-3">
                                 <div class="flex items-center justify-between mb-2">
-                                    <span class="text-sm font-medium text-gray-300">Crypto Value</span>
-                                    <span class="text-xs text-gray-500">Last 24h</span>
+                                    <span class="text-sm font-medium" style="color: #F6F8FA;">Crypto Value</span>
+                                    <span class="text-xs" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Last 24h</span>
                                 </div>
                                 <div class="h-16 flex items-center">
                                      <svg class="w-full h-full" viewBox="0 0 100 40" preserveAspectRatio="none"><path d="M0 25 L10 20 L20 28 L30 22 L40 30 L50 20 L60 25 L70 15 L80 22 L90 12 L100 20" fill="none" stroke="#3b82f6" stroke-width="2"/></svg>
@@ -181,69 +155,69 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-16 lg:py-24 bg-gray-800/50">
+    <section id="features" class="py-16 lg:py-24 bg-black">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">
                     The Most Powerful Crypto Platform
                 </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                <p class="max-w-3xl mx-auto" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
                     From instant trading to high-yield savings, CapiRocket provides all the tools you need to take control of your crypto future.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-8 transition-all duration-300 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 fade-in">
-                    <div class="w-14 h-14 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg shadow-yellow-500/30 mb-6">
-                        <i data-lucide="zap" class="w-7 h-7 text-white"></i>
+                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in">
+                    <div class="w-10 h-10 bg-yellow-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
+                        <i data-lucide="zap" class="w-5 h-5 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Instant Crypto Trading</h3>
-                    <p class="text-gray-400 leading-relaxed">
+                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">Instant Crypto Trading</h3>
+                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
                         Buy and sell a wide range of cryptocurrencies in seconds with our fast and reliable trading engine.
                     </p>
                 </div>
-                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-8 transition-all duration-300 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/10 fade-in" style="animation-delay: 0.1s;">
-                    <div class="w-14 h-14 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-2xl flex items-center justify-center shadow-lg shadow-purple-500/30 mb-6">
-                        <i data-lucide="gem" class="w-7 h-7 text-white"></i>
+                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in" style="animation-delay: 0.1s;">
+                    <div class="w-10 h-10 bg-purple-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
+                        <i data-lucide="gem" class="w-5 h-5 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">High-Yield Savings</h3>
-                    <p class="text-gray-400 leading-relaxed">
+                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">High-Yield Savings</h3>
+                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
                         Earn industry-leading interest rates on your crypto with our secure Time Deposits plans.
                     </p>
                 </div>
-                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-8 transition-all duration-300 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/10 fade-in" style="animation-delay: 0.2s;">
-                    <div class="w-14 h-14 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/30 mb-6">
-                        <i data-lucide="layout-dashboard" class="w-7 h-7 text-white"></i>
+                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in" style="animation-delay: 0.2s;">
+                    <div class="w-10 h-10 bg-blue-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
+                        <i data-lucide="layout-dashboard" class="w-5 h-5 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Portfolio Management</h3>
-                    <p class="text-gray-400 leading-relaxed">
+                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">Portfolio Management</h3>
+                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
                         Track your investments, monitor performance, and view detailed analytics from one powerful dashboard.
                     </p>
                 </div>
-                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-8 transition-all duration-300 hover:border-green-500/50 hover:shadow-xl hover:shadow-green-500/10 fade-in" style="animation-delay: 0.3s;">
-                    <div class="w-14 h-14 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center shadow-lg shadow-green-500/30 mb-6">
-                        <i data-lucide="shield-check" class="w-7 h-7 text-white"></i>
+                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in" style="animation-delay: 0.3s;">
+                    <div class="w-10 h-10 bg-green-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Advanced Security</h3>
-                    <p class="text-gray-400 leading-relaxed">
+                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">Advanced Security</h3>
+                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
                         Your assets are protected with multi-layer security, cold storage, and 2FA for peace of mind.
                     </p>
                 </div>
-                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-8 transition-all duration-300 hover:border-sky-500/50 hover:shadow-xl hover:shadow-sky-500/10 fade-in" style="animation-delay: 0.4s;">
-                    <div class="w-14 h-14 bg-gradient-to-br from-cyan-400 to-sky-500 rounded-2xl flex items-center justify-center shadow-lg shadow-cyan-500/30 mb-6">
-                        <i data-lucide="smartphone" class="w-7 h-7 text-white"></i>
+                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in" style="animation-delay: 0.4s;">
+                    <div class="w-10 h-10 bg-cyan-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
+                        <i data-lucide="smartphone" class="w-5 h-5 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Mobile First</h3>
-                    <p class="text-gray-400 leading-relaxed">
+                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">Mobile First</h3>
+                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
                         Manage your portfolio on the go with our fully responsive platform that works perfectly on all devices.
                     </p>
                 </div>
-                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-8 transition-all duration-300 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 fade-in" style="animation-delay: 0.5s;">
-                    <div class="w-14 h-14 bg-gradient-to-br from-indigo-400 to-violet-500 rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-500/30 mb-6">
-                        <i data-lucide="history" class="w-7 h-7 text-white"></i>
+                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in" style="animation-delay: 0.5s;">
+                    <div class="w-10 h-10 bg-indigo-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
+                        <i data-lucide="history" class="w-5 h-5 text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Transaction History</h3>
-                    <p class="text-gray-400 leading-relaxed">
+                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">Transaction History</h3>
+                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
                         Access detailed records of all your trades, deposits, and withdrawals with transparent reporting.
                     </p>
                 </div>
@@ -252,19 +226,19 @@
     </section>
 
     <!-- Trading Section -->
-    <section id="trading" class="py-16 lg:py-24 bg-gray-900">
+    <section id="trading" class="py-16 lg:py-24 bg-black">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">
                     Start Trading Instantly
                 </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                <p class="max-w-3xl mx-auto" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
                     Dive into the world of cryptocurrency. Buy, sell, and track top assets with ease.
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="crypto-cards-container">
                 <!-- VeChain Card (Featured) -->
-                <div class="bg-gradient-to-br from-gray-800 to-blue-900/50 border-blue-500 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:shadow-blue-400/40 relative scale-105 hover:scale-[1.07] shadow-lg">
+                <div class="bg-black border border-gray-600 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:shadow-gray-400/40 relative scale-105 hover:scale-[1.07] shadow-lg">
                     <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
                         <div class="bg-blue-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold shadow-md">TRENDING</div>
                     </div>
@@ -286,12 +260,12 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white text-lg">VeChain</h3>
-                                    <p class="text-sm text-gray-400">VET</p>
+                                    <h3 class="font-bold text-lg" style="color: #F6F8FA;">VeChain</h3>
+                                    <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">VET</p>
                                 </div>
                             </div>
                             <div class="text-right">
-                                <p class="text-xl font-bold text-white">$0.035</p>
+                                <p class="text-xl font-bold" style="color: #F6F8FA;">$0.035</p>
                             </div>
                         </div>
                         <div class="mb-6">
@@ -300,7 +274,7 @@
                                 <span class="text-base font-bold text-green-400">68%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-gradient-to-r from-green-400 to-teal-400 h-2.5 rounded-full" style="width: 55%"></div>
+                                <div class="bg-gray-400 h-2.5 rounded-full" style="width: 55%"></div>
                             </div>
                         </div>
                     </div>
@@ -311,7 +285,7 @@
                 </div>
 
                 <!-- Aptos Card -->
-                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:border-blue-500 hover:shadow-blue-500/20 hover:-translate-y-2">
+                <div class="bg-black border border-gray-600 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:border-gray-500 hover:shadow-gray-500/20 hover:-translate-y-2">
                     <div class="flex-grow">
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center gap-3">
@@ -329,12 +303,12 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white text-lg">Aptos</h3>
-                                    <p class="text-sm text-gray-400">APT</p>
+                                    <h3 class="font-bold text-lg" style="color: #F6F8FA;">Aptos</h3>
+                                    <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">APT</p>
                                 </div>
                             </div>
                             <div class="text-right">
-                                <p class="text-xl font-bold text-white">$8.50</p>
+                                <p class="text-xl font-bold" style="color: #F6F8FA;">$8.50</p>
                             </div>
                         </div>
                         <div class="mb-6">
@@ -343,7 +317,7 @@
                                 <span class="text-base font-bold text-green-400">52%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-gradient-to-r from-green-400 to-teal-400 h-2.5 rounded-full" style="width: 62%"></div>
+                                <div class="bg-gray-400 h-2.5 rounded-full" style="width: 62%"></div>
                             </div>
                         </div>
                     </div>
@@ -354,7 +328,7 @@
                 </div>
 
                 <!-- DeXe Card -->
-                <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:border-blue-500 hover:shadow-blue-500/20 hover:-translate-y-2">
+                <div class="bg-black border border-gray-600 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:border-gray-500 hover:shadow-gray-500/20 hover:-translate-y-2">
                     <div class="flex-grow">
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center gap-3">
@@ -373,12 +347,12 @@
                                     
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-white text-lg">DeXe</h3>
-                                    <p class="text-sm text-gray-400">DEXE</p>
+                                    <h3 class="font-bold text-lg" style="color: #F6F8FA;">DeXe</h3>
+                                    <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">DEXE</p>
                                 </div>
                             </div>
                             <div class="text-right">
-                                <p class="text-xl font-bold text-white">$11.20</p>
+                                <p class="text-xl font-bold" style="color: #F6F8FA;">$11.20</p>
                             </div>
                         </div>
                         <div class="mb-6">
@@ -387,7 +361,7 @@
                                 <span class="text-base font-bold text-green-400">45%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-gradient-to-r from-green-400 to-teal-400 h-2.5 rounded-full" style="width: 48%"></div>
+                                <div class="bg-gray-400 h-2.5 rounded-full" style="width: 48%"></div>
                             </div>
                         </div>
                     </div>
@@ -401,20 +375,20 @@
     </section>
 
     <!-- Activity Section -->
-    <section id="activity" class="py-16 lg:py-24 bg-gray-800/50">
+    <section id="activity" class="py-16 lg:py-24 bg-black">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="space-y-6 fade-in">
-                    <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Track Your Activity in Real-Time</h2>
-                    <p class="text-xl text-gray-400 mb-8">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">Track Your Activity in Real-Time</h2>
+                    <p class="mb-8" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
                         Stay on top of your portfolio with a detailed feed of your recent transactions. See all your buys, sells, and interest earnings in one place.
                     </p>
                     <a href="https://app.capirocket.net/login.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2 max-w-xs">
                         View All Transactions
                     </a>
                 </div>
-                <div class="bg-gray-800/80 rounded-2xl p-6 shadow-lg border border-gray-700 backdrop-blur-sm fade-in" style="animation-delay: 0.2s;">
-                    <h3 class="text-xl font-semibold text-white mb-6">Recent Activity</h3>
+                <div class="bg-black rounded-2xl p-6 shadow-lg border border-gray-600 backdrop-blur-sm fade-in" style="animation-delay: 0.2s;">
+                    <h3 class="text-xl font-semibold mb-6" style="color: #F6F8FA;">Recent Activity</h3>
                     <div class="space-y-5">
                         <!-- Transaction Item 1 -->
                         <div class="flex items-center gap-4">
@@ -422,12 +396,12 @@
                                 <i data-lucide="arrow-down-left" class="w-5 h-5 text-green-400"></i>
                             </div>
                             <div class="flex-grow">
-                                <p class="font-semibold text-white">Bought Bitcoin</p>
-                                <p class="text-sm text-gray-400">Using Wallet Balance</p>
+                                <p class="font-semibold" style="color: #F6F8FA;">Bought Bitcoin</p>
+                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Using Wallet Balance</p>
                             </div>
                             <div class="text-right">
-                                <p class="font-semibold text-white">+$500.00</p>
-                                <p class="text-sm text-gray-500">Just now</p>
+                                <p class="font-semibold" style="color: #F6F8FA;">+$500.00</p>
+                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Just now</p>
                             </div>
                         </div>
                         <!-- Transaction Item 2 -->
@@ -436,12 +410,12 @@
                                 <i data-lucide="award" class="w-5 h-5 text-yellow-400"></i>
                             </div>
                             <div class="flex-grow">
-                                <p class="font-semibold text-white">Interest Earned</p>
-                                <p class="text-sm text-gray-400">Super Plan (180 Days)</p>
+                                <p class="font-semibold" style="color: #F6F8FA;">Interest Earned</p>
+                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Super Plan (180 Days)</p>
                             </div>
                             <div class="text-right">
                                 <p class="font-semibold text-green-400">+$25.50</p>
-                                <p class="text-sm text-gray-500">Yesterday</p>
+                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Yesterday</p>
                             </div>
                         </div>
                         <!-- Transaction Item 3 -->
@@ -450,12 +424,12 @@
                                 <i data-lucide="arrow-up-right" class="w-5 h-5 text-red-400"></i>
                             </div>
                             <div class="flex-grow">
-                                <p class="font-semibold text-white">Sold Ethereum</p>
-                                <p class="text-sm text-gray-400">Credited to Wallet</p>
+                                <p class="font-semibold" style="color: #F6F8FA;">Sold Ethereum</p>
+                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Credited to Wallet</p>
                             </div>
                             <div class="text-right">
-                                <p class="font-semibold text-white">-$320.00</p>
-                                <p class="text-sm text-gray-500">2 days ago</p>
+                                <p class="font-semibold" style="color: #F6F8FA;">-$320.00</p>
+                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">2 days ago</p>
                             </div>
                         </div>
                     </div>
@@ -465,25 +439,25 @@
     </section>
 
     <!-- Savings Plans Section -->
-    <section id="plans" class="py-16 lg:py-24 bg-gray-900">
+    <section id="plans" class="py-16 lg:py-24 bg-black">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
-                    Grow Your Wealth with <span class="gradient-text">Time Deposits</span>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">
+                    Grow Your Wealth with Time Deposits
                 </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                <p class="max-w-3xl mx-auto" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
                     Choose from our flexible savings plans and watch your crypto grow with guaranteed returns.
                 </p>
             </div>
 
             <div class="grid lg:grid-cols-3 gap-8">
                 <!-- Plan 1 -->
-                <div class="bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-700 fade-in flex flex-col transition-all duration-300 hover:border-blue-500 hover:shadow-blue-500/20 hover:-translate-y-2">
+                <div class="bg-black rounded-2xl p-8 shadow-lg border border-gray-600 fade-in flex flex-col transition-all duration-300 hover:border-gray-500 hover:shadow-gray-500/20 hover:-translate-y-2">
                     <div class="flex-grow">
-                        <h3 class="text-2xl font-bold text-white">Starter Plan</h3>
+                        <h3 class="text-2xl font-bold" style="color: #F6F8FA;">Starter Plan</h3>
                         <p class="text-blue-400 font-semibold">90 Days Lock-in</p>
-                        <div class="text-5xl font-bold text-white my-6">18.5% <span class="text-2xl font-semibold text-gray-400">Weekly</span></div>
-                        <ul class="space-y-3 text-gray-400">
+                        <div class="text-5xl font-bold my-6" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">18.5% <span class="text-2xl font-semibold" style="color: #A1A4A5; font-family: 'Instrument Serif', serif;">Weekly</span></div>
+                        <ul class="space-y-3" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>$1,000 - $50,000</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>Weekly Interest Payout</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>Great for starting out</span></li>
@@ -501,7 +475,7 @@
                     <div class="flex-grow">
                         <h3 class="text-2xl font-bold text-white">Super Plan</h3>
                         <p class="text-blue-200 font-semibold">180 Days Lock-in</p>
-                        <div class="text-5xl font-bold text-white my-6">25.5% <span class="text-2xl font-semibold text-blue-200">Weekly</span></div>
+                        <div class="text-5xl font-bold text-white my-6" style="font-family: 'Instrument Serif', serif;">25.5% <span class="text-2xl font-semibold text-blue-200" style="font-family: 'Instrument Serif', serif;">Weekly</span></div>
                         <ul class="space-y-3 text-blue-100">
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-white"></i><span>$50,000 - $500,000</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-white"></i><span>Weekly Interest Payout</span></li>
@@ -513,12 +487,12 @@
                     </a>
                 </div>
                 <!-- Plan 3 -->
-                <div class="bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-700 fade-in flex flex-col transition-all duration-300 hover:border-blue-500 hover:shadow-blue-500/20 hover:-translate-y-2">
+                <div class="bg-black rounded-2xl p-8 shadow-lg border border-gray-600 fade-in flex flex-col transition-all duration-300 hover:border-gray-500 hover:shadow-gray-500/20 hover:-translate-y-2">
                     <div class="flex-grow">
-                        <h3 class="text-2xl font-bold text-white">Premium Plan</h3>
+                        <h3 class="text-2xl font-bold" style="color: #F6F8FA;">Premium Plan</h3>
                         <p class="text-blue-400 font-semibold">180 Days Lock-in</p>
-                        <div class="text-5xl font-bold text-white my-6">30% <span class="text-2xl font-semibold text-gray-400">Weekly</span></div>
-                        <ul class="space-y-3 text-gray-400">
+                        <div class="text-5xl font-bold my-6" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">30% <span class="text-2xl font-semibold" style="color: #A1A4A5; font-family: 'Instrument Serif', serif;">Weekly</span></div>
+                        <ul class="space-y-3" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>$500,000 - $5,000,000</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>Weekly Interest Payout</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>For high-volume traders</span></li>
@@ -529,12 +503,12 @@
                     </a>
                 </div>
                 <!-- Plan 4 -->
-                <div class="bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-700 fade-in flex flex-col transition-all duration-300 hover:border-blue-500 hover:shadow-blue-500/20 hover:-translate-y-2 lg:mt-8">
+                <div class="bg-black rounded-2xl p-8 shadow-lg border border-gray-600 fade-in flex flex-col transition-all duration-300 hover:border-gray-500 hover:shadow-gray-500/20 hover:-translate-y-2 lg:mt-8">
                     <div class="flex-grow">
-                        <h3 class="text-2xl font-bold text-white">Platinum Plan</h3>
+                        <h3 class="text-2xl font-bold" style="color: #F6F8FA;">Platinum Plan</h3>
                         <p class="text-blue-400 font-semibold">365 Days Lock-in</p>
-                        <div class="text-5xl font-bold text-white my-6">35% <span class="text-2xl font-semibold text-gray-400">Weekly</span></div>
-                        <ul class="space-y-3 text-gray-400">
+                        <div class="text-5xl font-bold my-6" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">35% <span class="text-2xl font-semibold" style="color: #A1A4A5; font-family: 'Instrument Serif', serif;">Weekly</span></div>
+                        <ul class="space-y-3" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>$5,000,000+</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>Weekly Interest Payout</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>For institutional partners</span></li>
@@ -545,7 +519,7 @@
                     </a>
                 </div>
                 <!-- Plan 5 (Special) -->
-                <div class="bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-2xl p-8 shadow-2xl border border-purple-500 fade-in flex flex-col transition-all duration-300 hover:shadow-purple-400/40 hover:-translate-y-2 lg:col-span-2 lg:mt-8">
+                <div class="bg-black text-white rounded-2xl p-8 shadow-2xl border border-gray-600 fade-in flex flex-col transition-all duration-300 hover:shadow-gray-400/40 hover:-translate-y-2 lg:col-span-2 lg:mt-8">
                     <div class="flex-grow">
                         <div class="flex justify-between items-start">
                             <div>
@@ -555,7 +529,7 @@
                             <div class="bg-white text-purple-600 px-3 py-1 rounded-full text-sm font-bold shadow-md">SPECIAL</div>
                         </div>
 
-                        <div class="text-6xl font-bold my-6">64.5% <span class="text-3xl font-semibold text-purple-200">Weekly</span></div>
+                        <div class="text-6xl font-bold my-6" style="font-family: 'Instrument Serif', serif;">64.5% <span class="text-3xl font-semibold text-purple-200" style="font-family: 'Instrument Serif', serif;">Weekly</span></div>
                         <ul class="space-y-3">
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5"></i><span>$75,000 - $10,000,000 Investment</span></li>
                             <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5"></i><span>Aggressive Short-Term Growth</span></li>
@@ -571,26 +545,26 @@
     </section>
 
     <!-- Security Section -->
-    <section id="security" class="py-16 lg:py-24 bg-gray-900">
+    <section id="security" class="py-16 lg:py-24 bg-black">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div class="relative fade-in order-last lg:order-first" style="animation-delay: 0.2s;">
-                    <div class="bg-gray-800 rounded-2xl shadow-xl p-8 border border-gray-700">
+                    <div class="bg-black rounded-2xl shadow-xl p-8 border border-gray-600">
                         <div class="relative w-48 h-48 mx-auto">
-                            <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full blur-xl opacity-50 animate-pulse"></div>
-                            <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-full flex items-center justify-center">
+                            <div class="absolute inset-0 bg-gray-800 rounded-full blur-xl opacity-50 animate-pulse"></div>
+                            <div class="absolute inset-0 bg-gray-800 rounded-full flex items-center justify-center">
                                 <i data-lucide="shield-check" class="w-24 h-24 text-white"></i>
                             </div>
                         </div>
                         <div class="text-center mt-8">
-                            <h3 class="text-2xl font-bold text-white mb-2">Fort-Knox Protection</h3>
-                            <p class="text-gray-400">Your assets are protected with military-grade encryption and offline cold storage.</p>
+                            <h3 class="text-2xl font-bold mb-2" style="color: #F6F8FA;">Fort-Knox Protection</h3>
+                            <p style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Your assets are protected with military-grade encryption and offline cold storage.</p>
                         </div>
                     </div>
                 </div>
                 <div class="space-y-6 fade-in">
-                    <h2 class="text-3xl lg:text-4xl font-bold text-white">Your Security is Our Priority</h2>
-                    <p class="text-xl text-gray-400">
+                    <h2 class="text-3xl lg:text-4xl font-bold" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">Your Security is Our Priority</h2>
+                    <p class="" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
                         We use industry-leading security measures to protect your financial data and ensure your peace of mind.
                     </p>
 
@@ -600,8 +574,8 @@
                                 <i data-lucide="check-circle" class="w-4 h-4 text-blue-400"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-white">256-bit SSL Encryption</h3>
-                                <p class="text-gray-400">All data is encrypted using bank-level security protocols.</p>
+                                <h3 class="font-semibold" style="color: #F6F8FA;">256-bit SSL Encryption</h3>
+                                <p style="color: #A1A4A5; font-family: 'Inter', sans-serif;">All data is encrypted using bank-level security protocols.</p>
                             </div>
                         </div>
 
@@ -610,8 +584,8 @@
                                 <i data-lucide="check-circle" class="w-4 h-4 text-blue-400"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-white">Two-Factor Authentication</h3>
-                                <p class="text-gray-400">Additional security layer for account access.</p>
+                                <h3 class="font-semibold" style="color: #F6F8FA;">Two-Factor Authentication</h3>
+                                <p style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Additional security layer for account access.</p>
                             </div>
                         </div>
 
@@ -620,8 +594,8 @@
                                 <i data-lucide="check-circle" class="w-4 h-4 text-blue-400"></i>
                             </div>
                             <div>
-                                <h3 class="font-semibold text-white">Cold Storage</h3>
-                                <p class="text-gray-400">Majority of user funds are held in secure offline storage.</p>
+                                <h3 class="font-semibold" style="color: #F6F8FA;">Cold Storage</h3>
+                                <p style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Majority of user funds are held in secure offline storage.</p>
                             </div>
                         </div>
                     </div>
@@ -631,62 +605,62 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="py-16 lg:py-24 bg-gray-800/50">
+    <section class="py-16 lg:py-24 bg-black">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Trusted by Thousands</h2>
-                <p class="text-xl text-gray-400">See what our customers have to say about their CapiRocket experience.</p>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">Trusted by Thousands</h2>
+                <p class="" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">See what our customers have to say about their CapiRocket experience.</p>
             </div>
             
             <div class="swiper testimonial-swiper fade-in">
                 <div class="swiper-wrapper pb-16">
                     <div class="swiper-slide">
-                        <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 h-full flex flex-col justify-between">
+                        <div class="bg-black border border-gray-600 rounded-lg p-6 h-full flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center gap-1 mb-4 text-yellow-400">
                                     <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                                 </div>
-                                <p class="text-gray-300 mb-4">"CapiRocket has completely transformed how I manage my crypto. The savings plans are a game-changer for passive income."</p>
+                                <p class="mb-4" style="color: #A1A4A5;">"CapiRocket has completely transformed how I manage my crypto. The savings plans are a game-changer for passive income."</p>
                             </div>
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center font-semibold">S</div>
                                 <div>
-                                    <div class="font-semibold text-white">Sarah J.</div>
-                                    <div class="text-sm text-gray-400">Crypto Investor</div>
+                                    <div class="font-semibold" style="color: #F6F8FA;">Sarah J.</div>
+                                    <div class="text-sm" style="color: #A1A4A5;">Crypto Investor</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                         <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 h-full flex flex-col justify-between">
+                         <div class="bg-black border border-gray-600 rounded-lg p-6 h-full flex flex-col justify-between">
                              <div>
                                 <div class="flex items-center gap-1 mb-4 text-yellow-400">
                                     <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                                 </div>
-                                <p class="text-gray-300 mb-4">"The platform is incredibly intuitive and the security features give me complete peace of mind. Highly recommended!"</p>
+                                <p class="mb-4" style="color: #A1A4A5;">"The platform is incredibly intuitive and the security features give me complete peace of mind. Highly recommended!"</p>
                             </div>
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center font-semibold">M</div>
                                 <div>
-                                    <div class="font-semibold text-white">Michael C.</div>
-                                    <div class="text-sm text-gray-400">Day Trader</div>
+                                    <div class="font-semibold" style="color: #F6F8FA;">Michael C.</div>
+                                    <div class="text-sm" style="color: #A1A4A5;">Day Trader</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                         <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 h-full flex flex-col justify-between">
+                         <div class="bg-black border border-gray-600 rounded-lg p-6 h-full flex flex-col justify-between">
                              <div>
                                 <div class="flex items-center gap-1 mb-4 text-yellow-400">
                                     <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
                                 </div>
-                                <p class="text-gray-300 mb-4">"Finally, a crypto platform that's both powerful for pros and easy for beginners. The mobile experience is flawless."</p>
+                                <p class="mb-4" style="color: #A1A4A5;">"Finally, a crypto platform that's both powerful for pros and easy for beginners. The mobile experience is flawless."</p>
                             </div>
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center font-semibold">E</div>
                                 <div>
-                                    <div class="font-semibold text-white">Emily R.</div>
-                                    <div class="text-sm text-gray-400">Tech Executive</div>
+                                    <div class="font-semibold" style="color: #F6F8FA;">Emily R.</div>
+                                    <div class="text-sm" style="color: #A1A4A5;">Tech Executive</div>
                                 </div>
                             </div>
                         </div>
@@ -698,15 +672,15 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 lg:py-24 bg-gradient-to-br from-blue-600 to-indigo-700">
+    <section class="py-16 lg:py-24 bg-black">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="max-w-3xl mx-auto space-y-8 fade-in">
-                <h2 class="text-3xl lg:text-4xl font-bold text-white">Ready to Launch Your Crypto Journey?</h2>
-                <p class="text-xl text-blue-200">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white" style="font-family: 'Instrument Serif', serif;">Ready to Launch Your Crypto Journey?</h2>
+                <p class="text-xl" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
                     Join thousands of users who trust CapiRocket to manage and grow their crypto assets. Get started today with a free account.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://app.capirocket.net/register.html" class="bg-white text-blue-600 hover:bg-gray-200 font-semibold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2">
+                    <a href="https://app.capirocket.net/register.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2">
                         Get Started for Free
                         <i data-lucide="arrow-right" class="w-5 h-5"></i>
                     </a>
@@ -716,35 +690,24 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+    <footer class="bg-black text-white py-12 border-t border-gray-800">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="space-y-4">
                     <div class="flex items-center gap-3">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="logo-gradient-footer" x1="0" y1="0" x2="1" y2="1">
-                                    <stop offset="0%" stop-color="#3b82f6"/>
-                                    <stop offset="100%" stop-color="#8b5cf6"/>
-                                </linearGradient>
-                            </defs>
-                            <g stroke="url(#logo-gradient-footer)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
-                                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
-                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
-                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
-                            </g>
-                        </svg>
-                        <span class="text-2xl font-bold font-dauphin">CapiRocket</span>
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">C</span>
+                        </div>
+                        <span class="text-2xl font-bold" style="font-family: 'Instrument Serif', serif;">CapiRocket</span>
                     </div>
-                    <p class="text-gray-400">
+                    <p style="color: #A1A4A5;">
                         The modern crypto platform that puts you in control.
                     </p>
                 </div>
 
                 <div>
-                    <h3 class="font-semibold mb-4">Product</h3>
-                    <div class="space-y-2 text-gray-400">
+                    <h3 class="font-semibold mb-4" style="color: #F6F8FA;">Product</h3>
+                    <div class="space-y-2" style="color: #A1A4A5;">
                         <div><a href="#features" class="hover:text-white transition-colors">Features</a></div>
                         <div><a href="#plans" class="hover:text-white transition-colors">Savings Plans</a></div>
                         <div><a href="#security" class="hover:text-white transition-colors">Security</a></div>
@@ -752,16 +715,16 @@
                 </div>
 
                 <div>
-                    <h3 class="font-semibold mb-4">Company</h3>
-                    <div class="space-y-2 text-gray-400">
+                    <h3 class="font-semibold mb-4" style="color: #F6F8FA;">Company</h3>
+                    <div class="space-y-2" style="color: #A1A4A5;">
                         <div><a href="about.html" class="hover:text-white transition-colors">About Us</a></div>
                         <div><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></div>
                     </div>
                 </div>
 
                 <div>
-                    <h3 class="font-semibold mb-4">Legal</h3>
-                    <div class="space-y-2 text-gray-400">
+                    <h3 class="font-semibold mb-4" style="color: #F6F8FA;">Legal</h3>
+                    <div class="space-y-2" style="color: #A1A4A5;">
                         <div><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></div>
                         <div><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></div>
                     </div>
@@ -769,8 +732,8 @@
             </div>
 
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <div class="text-gray-400 text-sm">© 2024 CapiRocket. All rights reserved.</div>
-                <div class="flex items-center gap-6 text-gray-400 mt-4 md:mt-0">
+                <div class="text-sm" style="color: #A1A4A5;">© 2024 CapiRocket. All rights reserved.</div>
+                <div class="flex items-center gap-6 mt-4 md:mt-0" style="color: #A1A4A5;">
                     <a href="#" class="hover:text-white transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
                     <a href="#" class="hover:text-white transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
                     <a href="#" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
