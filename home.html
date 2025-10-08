@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapiRocket - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-black font-sans">
+    <!-- Top Bar -->
+    <div class="w-full h-8 flex items-center justify-center" style="background-color: #002A2B; height: 30px;">
+        <span class="text-white mr-2" style="font-size: 12px;">Excellent</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 107 20" class="mr-2" style="height: 20px; width: auto;"><g><path d="M 0 20 L 0 0 L 106.667 0 L 106.667 20 Z" fill="transparent"></path><path d="M 20 0 L 0 0 L 0 20 L 20 20 Z" fill="rgb(33,150,83)"></path><path d="M 41.667 0 L 21.667 0 L 21.667 20 L 41.667 20 Z" fill="rgb(33,150,83)"></path><path d="M 63.333 0 L 43.333 0 L 43.333 20 L 63.333 20 Z" fill="rgb(33,150,83)"></path><path d="M 85 0 L 65 0 L 65 20 L 85 20 Z" fill="rgb(33,150,83)"></path><path d="M 106.667 0 L 86.667 0 L 86.667 20 L 106.667 20 Z" fill="rgb(33,150,83)"></path><path d="M 10 13.479 L 13.041 12.708 L 14.312 16.625 Z M 17 8.417 L 11.646 8.417 L 10 3.375 L 8.354 8.417 L 3 8.417 L 7.333 11.541 L 5.687 16.583 L 10.021 13.458 L 12.687 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 31.666 13.479 L 34.708 12.708 L 35.979 16.625 Z M 38.666 8.417 L 33.312 8.417 L 31.666 3.375 L 30.02 8.417 L 24.666 8.417 L 29 11.541 L 27.354 16.583 L 31.687 13.458 L 34.354 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 53.333 13.479 L 56.375 12.708 L 57.646 16.625 Z M 60.333 8.417 L 54.979 8.417 L 53.333 3.375 L 51.687 8.417 L 46.333 8.417 L 50.666 11.541 L 49.021 16.583 L 53.354 13.458 L 56.021 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 75 13.479 L 78.041 12.708 L 79.312 16.625 Z M 82 8.417 L 76.646 8.417 L 75 3.375 L 73.354 8.417 L 68 8.417 L 72.333 11.541 L 70.687 16.583 L 75.021 13.458 L 77.687 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 96.666 13.479 L 99.708 12.708 L 100.979 16.625 Z M 103.666 8.417 L 98.312 8.417 L 96.666 3.375 L 95.021 8.417 L 89.666 8.417 L 94 11.541 L 92.354 16.583 L 96.687 13.458 L 99.354 11.541 Z" fill="rgb(255,255,255)"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="mr-2" style="height: 20px; width: 20px;"><path d="M 8.922 13.473 L 12.71 12.482 L 14.293 17.518 Z M 17.641 6.964 L 10.972 6.964 L 8.922 0.482 L 6.872 6.964 L 0.203 6.964 L 5.6 10.982 L 3.55 17.464 L 8.948 13.446 L 12.269 10.982 Z" fill="rgb(4, 182, 124)"></path></svg>
+        <span class="text-white" style="font-size: 12px;">Trustpilot</span>
+    </div>
+    
+    <!-- Header Container -->
+    <header class="w-full flex items-center justify-between" style="background-color: white; height: 60px; padding: 0 20px;">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="/public/logo.webp" alt="CapiRocket Logo" class="w-auto" style="height: 100px;">
+            <span class="font-bold italic" style="color: #009296; font-size: 18px; margin-left: -12px;">VIP</span>
+        </div>
+        
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8">
+            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Features</a>
+            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Plans</a>
+            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">About</a>
+            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Contact</a>
+        </nav>
+        
+        <!-- Create Account Button -->
+        <button class="flex items-center gap-2 px-4 py-2 rounded text-white transition-colors" style="background-color: #009296; height: 32px; font-size: 12px; font-weight: 500;">
+            <span>Create Account</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="pt-6 pb-20" style="padding: 25px 20px 80px 20px;">
+        <div class="max-w-2xl mx-auto text-center">
+            <h1 class="font-semibold" style="font-size: 32px; letter-spacing: -1px; line-height: 43.3px; font-weight: 600;">
+                <span style="color: #009296;">TRADE</span> AND INVEST IN <span style="color: #009296;">CRYPTOCURRENCY</span> WITH <span style="color: #009296;">CONFIDENCE!</span>
+            </h1>
+            <p class="mt-2" style="font-size: 16px; line-height: 24px; font-weight: 400; color: #666666;">
+                Buy, sell, and grow crypto with high-yield savings and an intuitive dashboard.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Content will be added here -->
+</body>
+</html>
