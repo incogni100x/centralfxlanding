@@ -19,6 +19,7 @@
             }
         }
     </script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body class="bg-white text-black font-sans">
     <!-- Top Bar -->
@@ -68,8 +69,8 @@
     
     <!-- Video Section -->
     <section class="py-16" style="padding: 0 20px;">
-        <div class="flex justify-center">
-            <div class="video-container rounded-lg shadow-lg overflow-hidden" style="width: 560px; height: 192px;">
+        <div class="flex flex-col items-center">
+            <div class="video-container rounded-lg shadow-lg overflow-hidden w-full max-w-[560px]" style="height: 192px;">
                 <style>
                     @media (min-width: 640px) {
                         .video-container {
@@ -90,9 +91,106 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
+            
+            <!-- Button below video -->
+            <div class="mt-8">
+                <button class="flex items-center gap-2 px-6 py-3 rounded text-white font-medium transition-colors" style="background-color: #009296; font-size: 14px; font-weight: 500;">
+                    <span>Get Started Trading - Create Account</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="py-16" style="padding: 0 20px;">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">
+                    The Most Powerful Crypto Platform
+                </h2>
+                <p class="max-w-3xl mx-auto" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
+                    From instant trading to high-yield savings, CapiRocket provides all the tools you need to take control of your crypto future.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-8">
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="zap" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 16px; font-weight: 600;">Instant Crypto Trading</h3>
+                    </div>
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px;">
+                        Buy and sell a wide range of cryptocurrencies in seconds with our fast and reliable trading engine.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="gem" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 16px; font-weight: 600;">High-Yield Savings</h3>
+                    </div>
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px;">
+                        Earn industry-leading interest rates on your crypto with our secure Time Deposits plans.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="layout-dashboard" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 16px; font-weight: 600;">Portfolio Management</h3>
+                    </div>
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px;">
+                        Track your investments, monitor performance, and view detailed analytics from one powerful dashboard.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="shield-check" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 16px; font-weight: 600;">Advanced Security</h3>
+                    </div>
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px;">
+                        Your assets are protected with multi-layer security, cold storage, and 2FA for peace of mind.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="smartphone" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 16px; font-weight: 600;">Mobile First</h3>
+                    </div>
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px;">
+                        Manage your portfolio on the go with our fully responsive platform that works perfectly on all devices.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="history" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 16px; font-weight: 600;">Transaction History</h3>
+                    </div>
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px;">
+                        Access detailed records of all your trades, deposits, and withdrawals with transparent reporting.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     
     <!-- Content will be added here -->
+    
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
