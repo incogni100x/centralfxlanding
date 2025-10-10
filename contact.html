@@ -3,213 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - CapiRocket</title>
+    <title>tcentraFX VIP - About Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" src="/src/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-black text-gray-200 smooth-scroll">
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-overlay" class="fixed inset-0 bg-black bg-opacity-60 z-40 lg:hidden opacity-0 pointer-events-none transition-opacity duration-300"></div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 bg-black z-50 lg:hidden mobile-menu">
-        <div class="p-6 flex flex-col h-full">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <span class="text-2xl font-bold text-white" style="font-family: 'Instrument Serif', serif;">CapiRocket</span>
-                </div>
-                <button id="mobile-menu-close-btn" class="p-2 text-gray-400 hover:text-white">
-                    <i data-lucide="x" class="w-5 h-5"></i>
-                </button>
-            </div>
-            <div class="flex-grow flex items-center justify-center">
-                <nav class="space-y-6 text-center" style="font-family: 'Inter', sans-serif;">
-                    <a href="index.html" class="block text-2xl font-medium text-gray-300 hover:text-white transition-colors py-2">Home</a>
-                    <a href="about.html" class="block text-2xl font-medium text-gray-300 hover:text-white transition-colors py-2">About Us</a>
-                    <a href="contact.html" class="block text-2xl font-medium text-white transition-colors py-2">Contact</a>
-                </nav>
-            </div>
-            <div class="pt-6 border-t border-gray-700 space-y-4" style="font-family: 'Inter', sans-serif;">
-                <a href="https://app.capirocket.net/login.html" class="block w-full text-center text-gray-300 hover:text-white transition-colors py-3 rounded-lg border border-gray-600">Sign In</a>
-                <a href="https://app.capirocket.net/register.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg transition-colors text-center font-semibold">Get Started</a>
-           </div>
-        </div>
+<body class="bg-white text-black font-sans">
+    <!-- Top Bar -->
+    <div class="w-full h-8 flex items-center justify-center" style="background-color: #002A2B; height: 30px;">
+        <span class="text-white mr-2" style="font-size: 12px;">Excellent</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 107 20" class="mr-2" style="height: 20px; width: auto;"><g><path d="M 0 20 L 0 0 L 106.667 0 L 106.667 20 Z" fill="transparent"></path><path d="M 20 0 L 0 0 L 0 20 L 20 20 Z" fill="rgb(33,150,83)"></path><path d="M 41.667 0 L 21.667 0 L 21.667 20 L 41.667 20 Z" fill="rgb(33,150,83)"></path><path d="M 63.333 0 L 43.333 0 L 43.333 20 L 63.333 20 Z" fill="rgb(33,150,83)"></path><path d="M 85 0 L 65 0 L 65 20 L 85 20 Z" fill="rgb(33,150,83)"></path><path d="M 106.667 0 L 86.667 0 L 86.667 20 L 106.667 20 Z" fill="rgb(33,150,83)"></path><path d="M 10 13.479 L 13.041 12.708 L 14.312 16.625 Z M 17 8.417 L 11.646 8.417 L 10 3.375 L 8.354 8.417 L 3 8.417 L 7.333 11.541 L 5.687 16.583 L 10.021 13.458 L 12.687 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 31.666 13.479 L 34.708 12.708 L 35.979 16.625 Z M 38.666 8.417 L 33.312 8.417 L 31.666 3.375 L 30.02 8.417 L 24.666 8.417 L 29 11.541 L 27.354 16.583 L 31.687 13.458 L 34.354 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 53.333 13.479 L 56.375 12.708 L 57.646 16.625 Z M 60.333 8.417 L 54.979 8.417 L 53.333 3.375 L 51.687 8.417 L 46.333 8.417 L 50.666 11.541 L 49.021 16.583 L 53.354 13.458 L 56.021 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 75 13.479 L 78.041 12.708 L 79.312 16.625 Z M 82 8.417 L 76.646 8.417 L 75 3.375 L 73.354 8.417 L 68 8.417 L 72.333 11.541 L 70.687 16.583 L 75.021 13.458 L 77.687 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 96.666 13.479 L 99.708 12.708 L 100.979 16.625 Z M 103.666 8.417 L 98.312 8.417 L 96.666 3.375 L 95.021 8.417 L 89.666 8.417 L 94 11.541 L 92.354 16.583 L 96.687 13.458 L 99.354 11.541 Z" fill="rgb(255,255,255)"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="mr-2" style="height: 20px; width: 20px;"><path d="M 8.922 13.473 L 12.71 12.482 L 14.293 17.518 Z M 17.641 6.964 L 10.972 6.964 L 8.922 0.482 L 6.872 6.964 L 0.203 6.964 L 5.6 10.982 L 3.55 17.464 L 8.948 13.446 L 12.269 10.982 Z" fill="rgb(4, 182, 124)"></path></svg>
+        <span class="text-white" style="font-size: 12px;">Trustpilot</span>
     </div>
-
-    <!-- Header -->
-    <header class="bg-black/80 sticky top-0 z-30 backdrop-blur-md">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 lg:h-20">
-                <div class="flex items-center gap-3">
-                    <span class="text-2xl font-bold text-white" style="font-family: 'Instrument Serif', serif;">CapiRocket</span>
-                </div>
-                <nav class="hidden md:flex items-center gap-8">
-                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
-                    <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a>
-                    <a href="contact.html" class="text-white font-semibold transition-colors">Contact</a>
-                </nav>
-                <div class="flex items-center gap-4">
-                    <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-400 hover:text-white">
-                        <i data-lucide="menu" class="w-5 h-5"></i>
-                    </button>
-                    <a href="https://app.capirocket.net/login.html" class="hidden sm:inline-flex px-4 py-2 text-gray-400 hover:text-white transition-colors">
-                        Sign In
-                    </a>
-                    <a href="https://app.capirocket.net/register.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors hidden md:flex items-center gap-2">
-                        Get Started
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </a>
-                </div>
-            </div>
+    
+    <!-- Header Container -->
+    <header class="w-full flex items-center justify-between" style="background-color: white; height: 60px; padding: 0 20px;">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="/public/logo.webp" alt="tcentraFX VIP Logo" class="w-auto" style="height: 100px;">
+            <span class="font-bold italic" style="color: #009296; font-size: 18px; margin-left: -12px;">VIP</span>
         </div>
+        
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8">
+            <a href="home.html" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Home</a>
+            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Features</a>
+            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Plans</a>
+            <a href="aboutus.html" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">About</a>
+            <a href="contact.html" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Contact</a>
+        </nav>
+        
+        <!-- Create Account Button -->
+        <button class="flex items-center gap-2 px-4 py-2 rounded text-white transition-colors" style="background-color: #009296; height: 32px; font-size: 12px; font-weight: 500;">
+            <span>Create Account</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
     </header>
 
-    <!-- Contact Hero Section -->
-    <section class="relative overflow-hidden bg-black py-16 lg:py-24">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-4xl mx-auto">
-                <div class="space-y-6 fade-in">
-                    <div class="inline-flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full text-sm font-medium border border-gray-700" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
-                        <i data-lucide="headphones" class="w-4 h-4"></i>
-                        24/7 Support
-                    </div>
-                    <h1 class="text-4xl lg:text-6xl font-bold leading-tight" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">Get in Touch with CapiRocket</h1>
-                    <p class="leading-relaxed max-w-3xl mx-auto" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 14px;">Have questions about our platform? Need help with your account? Our dedicated support team is here to assist you.</p>
-                </div>
+    <!-- Contact Us Section -->
+    <section style="padding: 80px 20px 40px 20px;">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 style="color: black; font-family: 'Inter', sans-serif; font-size: 36px; letter-spacing: -0.96px; font-weight: 600; line-height: 43.2px; margin-bottom: 20px;">
+                    Contact Us
+                </h1>
+                <p style="color: black; font-family: 'Inter', sans-serif; font-size: 14px; line-height: 22.4px; font-weight: 300; max-width: 2xl;">
+                    Get in touch with our team. We're here to help you with any questions or concerns.
+                </p>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="py-16 lg:py-24 bg-black">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-                <!-- Form -->
-                <div class="bg-black rounded-2xl p-8 border border-gray-600 backdrop-blur-sm fade-in">
-                    <h2 class="text-3xl font-bold text-white mb-6" style="font-family: 'Instrument Serif', serif;">Send Us a Message</h2>
-                    <form id="contact-form" class="space-y-6" style="font-family: 'Inter', sans-serif;">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="firstName" class="block text-sm font-medium text-gray-400 mb-2">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition-all" placeholder="John">
-                            </div>
-                            <div>
-                                <label for="lastName" class="block text-sm font-medium text-gray-400 mb-2">Last Name *</label>
-                                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition-all" placeholder="Doe">
-                            </div>
-                        </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 style="color: black; font-family: 'Inter', sans-serif; font-size: 24px; letter-spacing: -0.96px; font-weight: 600; line-height: 28.8px; margin-bottom: 24px;">
+                        Send us a Message
+                    </h2>
+                    <form class="space-y-6">
                         <div>
-                            <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email Address *</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition-all" placeholder="you@example.com">
+                            <label for="name" style="color: #666666; font-size: 14px; font-weight: 500; margin-bottom: 8px; display: block;">Full Name</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                   style="font-size: 14px; font-weight: 400;">
                         </div>
+                        
                         <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-400 mb-2">Phone (Optional)</label>
-                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition-all" placeholder="+1 (555) 123-4567">
+                            <label for="email" style="color: #666666; font-size: 14px; font-weight: 500; margin-bottom: 8px; display: block;">Email Address</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                   style="font-size: 14px; font-weight: 400;">
                         </div>
+                        
                         <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-400 mb-2">Subject *</label>
-                            <select id="subject" name="subject" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition-all">
-                                <option>Account Support</option>
-                                <option>Technical Issues</option>
-                                <option>Savings Plans</option>
-                                <option>Feedback</option>
-                                <option>Other</option>
-                            </select>
+                            <label for="subject" style="color: #666666; font-size: 14px; font-weight: 500; margin-bottom: 8px; display: block;">Subject</label>
+                            <input type="text" id="subject" name="subject" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                   style="font-size: 14px; font-weight: 400;">
                         </div>
+                        
                         <div>
-                            <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message *</label>
-                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition-all resize-none" placeholder="How can we help you?"></textarea>
+                            <label for="message" style="color: #666666; font-size: 14px; font-weight: 500; margin-bottom: 8px; display: block;">Message</label>
+                            <textarea id="message" name="message" rows="5" required 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical"
+                                      style="font-size: 14px; font-weight: 400;"></textarea>
                         </div>
-                        <button type="submit" id="contact-submit-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
-                            <span id="submit-btn-text">Send Message</span>
-                            <i data-lucide="send" class="w-5 h-5" id="submit-btn-icon"></i>
-                            <div id="submit-spinner" class="animate-spin rounded-full h-5 w-5 border-b-2 border-white hidden"></div>
+                        
+                        <button type="submit" 
+                                class="w-full text-white font-semibold px-6 py-3 rounded-lg flex items-center justify-center gap-2"
+                                style="background-color: #009296; font-size: 14px; font-weight: 500;">
+                            Send Message
+                            <i data-lucide="send" class="w-4 h-4"></i>
                         </button>
                     </form>
-                    <div id="form-success-message" class="hidden mt-6 p-4 bg-green-900/50 border border-green-700 text-green-300 rounded-lg text-center">
-                        Thanks for your message! We'll get back to you shortly.
-                    </div>
-                    <div id="form-error-message" class="hidden mt-6 p-4 bg-red-900/50 border border-red-700 text-red-300 rounded-lg text-center">
-                        Sorry, something went wrong. Please try again.
-                    </div>
                 </div>
-                <!-- Contact Info -->
-                <div class="space-y-8 fade-in" style="animation-delay: 0.2s;">
-                    <div class="bg-black rounded-2xl p-8 border border-gray-600">
-                        <h3 class="text-2xl font-bold text-white mb-6" style="font-family: 'Instrument Serif', serif;">Contact Information</h3>
-                        <div class="space-y-6" style="font-family: 'Inter', sans-serif;">
-                            <div class="flex items-start gap-4">
-                                <div class="w-12 h-12 bg-blue-900/50 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <i data-lucide="mail" class="w-6 h-6 text-blue-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-white">Email Us</h4>
-                                    <p style="color: #A1A4A5;">Our team will get back to you within 24 hours.</p>
-                                    <a href="mailto:support@capirocket.net" class="text-blue-400 hover:underline">support@capirocket.net</a>
-                                </div>
+                
+                <!-- Contact Information -->
+                <div>
+                    <h2 style="color: black; font-family: 'Inter', sans-serif; font-size: 24px; letter-spacing: -0.96px; font-weight: 600; line-height: 28.8px; margin-bottom: 24px;">
+                        Get in Touch
+                    </h2>
+                    
+                    <div class="space-y-8">
+                        <!-- Telegram -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background-color: #009296;">
+                                <i data-lucide="message-circle" class="w-6 h-6 text-white"></i>
                             </div>
-                            <div class="flex items-start gap-4">
-                                <div class="w-12 h-12 bg-blue-900/50 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <i data-lucide="send" class="w-6 h-6 text-blue-400"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-white">Join our Community</h4>
-                                    <p style="color: #A1A4A5;">Ask questions and get help on Telegram.</p>
-                                    <a href="https://t.me/capirocket" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Chat on Telegram</a>
-                                </div>
+                            <div>
+                                <h3 style="color: black; font-size: 16px; font-weight: 600; margin-bottom: 4px;">Telegram Support</h3>
+                                <p style="color: #666666; font-size: 14px; line-height: 22.4px; font-weight: 300; margin-bottom: 8px;">
+                                    Join our Telegram community for instant support and updates.
+                                </p>
+                                <a href="https://t.me/tcentrafxvip" target="_blank" 
+                                   class="inline-flex items-center gap-2 text-white px-4 py-2 rounded-lg"
+                                   style="background-color: #009296; font-size: 14px; font-weight: 500; text-decoration: none;">
+                                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                                    Join Telegram
+                                </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-16 lg:py-24 bg-black">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4" style="font-family: 'Instrument Serif', serif;">Frequently Asked Questions</h2>
-                <p class="max-w-3xl mx-auto" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 14px;">Find quick answers to common questions about CapiRocket.</p>
-            </div>
-            <div class="max-w-4xl mx-auto space-y-4" style="font-family: 'Inter', sans-serif;">
-                <!-- FAQ Item 1 -->
-                <div class="bg-black rounded-lg fade-in border border-gray-600">
-                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-semibold text-white">How do I create an account?</h3>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        
+                        <!-- Email -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background-color: #009296;">
+                                <i data-lucide="mail" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 style="color: black; font-size: 16px; font-weight: 600; margin-bottom: 4px;">Email Support</h3>
+                                <p style="color: #666666; font-size: 14px; line-height: 22.4px; font-weight: 300; margin-bottom: 8px;">
+                                    Send us an email and we'll get back to you within 24 hours.
+                                </p>
+                                <a href="mailto:support@tcentrafxvip.com" 
+                                   class="text-blue-600 hover:text-blue-800"
+                                   style="font-size: 14px; font-weight: 500; text-decoration: none;">
+                                    support@tcentrafxvip.com
+                                </a>
+                            </div>
                         </div>
-                    </button>
-                    <div class="faq-content px-6 pb-6">
-                        <p style="color: #A1A4A5;">You can create an account by clicking the "Get Started" button on our homepage. The process is fast, secure, and only takes a few minutes.</p>
-                    </div>
-                </div>
-                <!-- FAQ Item 2 -->
-                <div class="bg-black rounded-lg fade-in border border-gray-600">
-                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-semibold text-white">What are the fees for trading?</h3>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        
+                        <!-- Response Time -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background-color: #009296;">
+                                <i data-lucide="clock" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 style="color: black; font-size: 16px; font-weight: 600; margin-bottom: 4px;">Response Time</h3>
+                                <p style="color: #666666; font-size: 14px; line-height: 22.4px; font-weight: 300;">
+                                    We typically respond to all inquiries within 2-4 hours during business hours.
+                                </p>
+                            </div>
                         </div>
-                    </button>
-                    <div class="faq-content px-6 pb-6">
-                        <p style="color: #A1A4A5;">We offer a competitive and transparent fee structure. Trading fees start as low as 0.1% and decrease with higher trading volumes. There are no hidden fees.</p>
-                    </div>
-                </div>
-                <!-- FAQ Item 3 -->
-                <div class="bg-black rounded-lg fade-in border border-gray-600">
-                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-semibold text-white">Is my crypto safe with CapiRocket?</h3>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
-                        </div>
-                    </button>
-                    <div class="faq-content px-6 pb-6">
-                        <p style="color: #A1A4A5;">Security is our top priority. We use industry-leading security measures, including cold storage for the majority of assets, multi-factor authentication, and continuous monitoring to protect your funds.</p>
                     </div>
                 </div>
             </div>
@@ -217,45 +173,77 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-12 border-t border-gray-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3">
-                        <span class="text-2xl font-bold" style="font-family: 'Instrument Serif', serif;">CapiRocket</span>
-                    </div>
-                    <p style="color: #A1A4A5;">The modern crypto platform that puts you in control.</p>
+    <footer style="background-color: #002A2B; padding: 64px 20px 40px 20px;">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Company Info -->
+                <div class="md:col-span-1">
+                    <img src="/public/logof.png" alt="CentralFX VIP Logo" style="height: 60px; margin-bottom: 20px;">
+                    <p style="color: #cccccc; font-size: 14px; font-weight: 400; line-height: 19.6px;">
+                        Your trusted partner in cryptocurrency trading and investment.
+                    </p>
                 </div>
+
+                <!-- Membership Plans -->
                 <div>
-                    <h3 class="font-semibold mb-4" style="color: #F6F8FA;">Company</h3>
-                    <div class="space-y-2" style="color: #A1A4A5;">
-                        <div><a href="about.html" class="hover:text-white transition-colors">About Us</a></div>
-                        <div><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></div>
-                    </div>
+                    <h3 style="color: white; font-size: 16px; font-weight: 600; margin-bottom: 16px;">Membership Plans</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Private Community</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Silver Members</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Gold Members</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Elite VIP</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Elite VVIP Premium</a></li>
+                    </ul>
                 </div>
+
+                <!-- Security -->
                 <div>
-                    <h3 class="font-semibold mb-4" style="color: #F6F8FA;">Legal</h3>
-                    <div class="space-y-2" style="color: #A1A4A5;">
-                        <div><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></div>
-                        <div><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></div>
-                    </div>
+                    <h3 style="color: white; font-size: 16px; font-weight: 600; margin-bottom: 16px;">Security</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Security Features</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Two-Factor Authentication</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Data Protection</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Compliance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 style="color: white; font-size: 16px; font-weight: 600; margin-bottom: 16px;">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="aboutus.html" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">About Us</a></li>
+                        <li><a href="contact.html" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Contact Us</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Careers</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Press</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <div class="text-gray-400 text-sm">© 2024 CapiRocket. All rights reserved.</div>
-                <div class="flex items-center gap-6 text-gray-400 mt-4 md:mt-0">
-                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+
+            <!-- Legal Section -->
+            <div class="border-t border-gray-600 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <p style="color: #cccccc; font-size: 14px; font-weight: 400;">
+                            © 2024 CentralFX VIP. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="privacy.html" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Privacy Policy</a>
+                        <a href="terms.html" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Terms of Service</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script type="module" src="/src/contact-form-handler.js"></script>
-
-    <!-- Floating Telegram Button -->
-    <a href="https://t.me/capirocket" target="_blank" rel="noopener noreferrer" class="fixed bottom-8 right-8 bg-sky-500 w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg z-50 transition-transform duration-300 hover:scale-110 animate-bounce-float">
-        <i data-lucide="send" class="w-8 h-8 -translate-x-px translate-y-px"></i>
-    </a>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+        });
+    </script>
 </body>
-</html> 
+</html>

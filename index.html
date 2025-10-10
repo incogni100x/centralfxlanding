@@ -3,249 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CapiRocket - Trade and Invest in Cryptocurrency with Confidence</title>
+    <title>tcentraFX VIP - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <script type="module" src="/src/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-black text-gray-200 smooth-scroll">
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-overlay" class="fixed inset-0 bg-black bg-opacity-60 z-40 lg:hidden opacity-0 pointer-events-none transition-opacity duration-300"></div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 bg-black z-50 lg:hidden mobile-menu">
-        <div class="p-6 flex flex-col h-full">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <span class="text-2xl font-bold text-white" style="font-family: 'Instrument Serif', serif;">CapiRocket</span>
-                </div>
-                <button id="mobile-menu-close-btn" class="p-2 text-gray-400 hover:text-white">
-                    <i data-lucide="x" class="w-5 h-5"></i>
-                </button>
-            </div>
-            <div class="flex-grow flex items-center justify-center">
-                <nav class="space-y-6 text-center" style="font-family: 'Inter', sans-serif;">
-                    <a href="index.html" class="block text-2xl font-medium text-gray-300 hover:text-white transition-colors py-2">Home</a>
-                    <a href="about.html" class="block text-2xl font-medium text-gray-300 hover:text-white transition-colors py-2">About Us</a>
-                    <a href="contact.html" class="block text-2xl font-medium text-gray-300 hover:text-white transition-colors py-2">Contact</a>
-                </nav>
-            </div>
-            <div class="pt-6 border-t border-gray-700 space-y-4" style="font-family: 'Inter', sans-serif;">
-                <a href="https://app.capirocket.net/login.html" class="block w-full text-center text-gray-300 hover:text-white transition-colors py-3 rounded-lg border border-gray-600">Sign In</a>
-                <a href="https://app.capirocket.net/register.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg transition-colors text-center font-semibold">
-                   Get Started
-               </a>
-           </div>
-        </div>
+<body class="bg-white text-black font-sans">
+    <!-- Top Bar -->
+    <div class="w-full h-8 flex items-center justify-center" style="background-color: #002A2B; height: 30px;">
+        <span class="text-white mr-2" style="font-size: 12px;">Excellent</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 107 20" class="mr-2" style="height: 20px; width: auto;"><g><path d="M 0 20 L 0 0 L 106.667 0 L 106.667 20 Z" fill="transparent"></path><path d="M 20 0 L 0 0 L 0 20 L 20 20 Z" fill="rgb(33,150,83)"></path><path d="M 41.667 0 L 21.667 0 L 21.667 20 L 41.667 20 Z" fill="rgb(33,150,83)"></path><path d="M 63.333 0 L 43.333 0 L 43.333 20 L 63.333 20 Z" fill="rgb(33,150,83)"></path><path d="M 85 0 L 65 0 L 65 20 L 85 20 Z" fill="rgb(33,150,83)"></path><path d="M 106.667 0 L 86.667 0 L 86.667 20 L 106.667 20 Z" fill="rgb(33,150,83)"></path><path d="M 10 13.479 L 13.041 12.708 L 14.312 16.625 Z M 17 8.417 L 11.646 8.417 L 10 3.375 L 8.354 8.417 L 3 8.417 L 7.333 11.541 L 5.687 16.583 L 10.021 13.458 L 12.687 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 31.666 13.479 L 34.708 12.708 L 35.979 16.625 Z M 38.666 8.417 L 33.312 8.417 L 31.666 3.375 L 30.02 8.417 L 24.666 8.417 L 29 11.541 L 27.354 16.583 L 31.687 13.458 L 34.354 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 53.333 13.479 L 56.375 12.708 L 57.646 16.625 Z M 60.333 8.417 L 54.979 8.417 L 53.333 3.375 L 51.687 8.417 L 46.333 8.417 L 50.666 11.541 L 49.021 16.583 L 53.354 13.458 L 56.021 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 75 13.479 L 78.041 12.708 L 79.312 16.625 Z M 82 8.417 L 76.646 8.417 L 75 3.375 L 73.354 8.417 L 68 8.417 L 72.333 11.541 L 70.687 16.583 L 75.021 13.458 L 77.687 11.541 Z" fill="rgb(255,255,255)"></path><path d="M 96.666 13.479 L 99.708 12.708 L 100.979 16.625 Z M 103.666 8.417 L 98.312 8.417 L 96.666 3.375 L 95.021 8.417 L 89.666 8.417 L 94 11.541 L 92.354 16.583 L 96.687 13.458 L 99.354 11.541 Z" fill="rgb(255,255,255)"></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" class="mr-2" style="height: 20px; width: 20px;"><path d="M 8.922 13.473 L 12.71 12.482 L 14.293 17.518 Z M 17.641 6.964 L 10.972 6.964 L 8.922 0.482 L 6.872 6.964 L 0.203 6.964 L 5.6 10.982 L 3.55 17.464 L 8.948 13.446 L 12.269 10.982 Z" fill="rgb(4, 182, 124)"></path></svg>
+        <span class="text-white" style="font-size: 12px;">Trustpilot</span>
     </div>
-
-    <!-- Header -->
-    <header class="bg-black/80 sticky top-0 z-30 backdrop-blur-md">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 lg:h-20">
-                <div class="flex items-center gap-3">
-                    <span class="text-2xl font-bold text-white" style="font-family: 'Instrument Serif', serif;">CapiRocket</span>
-                </div>
-
-                <nav class="hidden md:flex items-center gap-8">
-                    <a href="index.html" class="text-white font-semibold transition-colors">Home</a>
-                    <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a>
-                    <a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a>
-                </nav>
-
-                <div class="flex items-center gap-4">
-                    <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-400 hover:text-white">
-                        <i data-lucide="menu" class="w-5 h-5"></i>
-                    </button>
-                    <a href="https://app.capirocket.net/login.html" class="hidden sm:inline-flex px-4 py-2 text-gray-400 hover:text-white transition-colors">
-                        Sign In
-                    </a>
-                    <a href="https://app.capirocket.net/register.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors hidden md:flex items-center gap-2">
-                        Get Started
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </a>
-                </div>
-            </div>
+    
+    <!-- Header Container -->
+    <header class="w-full flex items-center justify-between" style="background-color: white; height: 60px; padding: 0 20px;">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="/public/logo.webp" alt="tcentraFX VIP Logo" class="w-auto" style="height: 100px;">
+            <span class="font-bold italic" style="color: #009296; font-size: 18px; margin-left: -12px;">VIP</span>
         </div>
+        
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8">
+            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Features</a>
+            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Plans</a>
+            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">About</a>
+            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Contact</a>
+        </nav>
+        
+        <!-- Create Account Button -->
+        <button class="flex items-center gap-2 px-4 py-2 rounded text-white transition-colors" style="background-color: #009296; height: 32px; font-size: 12px; font-weight: 500;">
+            <span>Create Account</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
     </header>
-
+    
     <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-black py-16 lg:py-24">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <div class="space-y-8 fade-in">
-                    <div class="space-y-6">
-                        <div class="inline-flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-full text-sm font-medium border border-gray-700" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
-                            <i data-lucide="zap" class="w-4 h-4"></i>
-                            The Future of Crypto is Here
-                        </div>
-                        <h1 class="text-4xl lg:text-6xl font-bold leading-tight" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">
-                            Trade and Invest In Cryptocurrency With Confidence
-                        </h1>
-                        <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
-                            CapiRocket is your all-in-one platform for buying, selling, and growing your crypto assets. Benefit from high-yield savings and a powerful, user-friendly dashboard.
-                        </p>
-                    </div>
-
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://app.capirocket.net/register.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2">
-                            Create Account
-                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                        </a>
-                        <a href="#plans" class="border border-gray-600 hover:bg-gray-800 font-semibold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
-                            Explore Plans
-                        </a>
-                    </div>
-                </div>
-
-                <div class="relative fade-in" style="animation-delay: 0.2s;">
-                    <!-- Dashboard Preview -->
-                    <div class="relative bg-gray-800/50 rounded-2xl shadow-2xl p-6 transform -rotate-2 border border-gray-700 backdrop-blur-sm">
-                        <div class="space-y-4">
-                            <!-- Header -->
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <h3 class="font-bold" style="color: #F6F8FA;">My Portfolio</h3>
-                                    <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Welcome back, John D.</p>
-                                </div>
-                                <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                                    <span class="text-white font-semibold text-xs">JD</span>
-                                </div>
-                            </div>
-
-                            <!-- Balance Cards -->
-                            <div class="grid grid-cols-2 gap-3">
-                                <div class="bg-gray-800 rounded-xl p-4 text-white">
-                                    <p class="text-blue-200 text-xs mb-1">Total Balance</p>
-                                    <p class="text-lg font-bold">$15,830.50</p>
-                                    <div class="flex items-center gap-2 mt-2">
-                                        <i data-lucide="wallet" class="w-4 h-4 text-blue-200"></i>
-                                        <span class="text-blue-200 text-xs">Wallet</span>
-                                    </div>
-                                </div>
-                                <div class="bg-gray-800 rounded-xl p-4 text-white">
-                                    <p class="text-purple-200 text-xs mb-1">Time Deposits</p>
-                                    <p class="text-lg font-bold">$8,120.00</p>
-                                    <div class="flex items-center gap-1 mt-2">
-                                        <span class="text-xs font-semibold text-green-300">+12% APY</span>
-                                        <i data-lucide="trending-up" class="w-3 h-3 text-green-300"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mini Chart -->
-                            <div class="bg-gray-700/50 rounded-lg p-3">
-                                <div class="flex items-center justify-between mb-2">
-                                    <span class="text-sm font-medium" style="color: #F6F8FA;">Crypto Value</span>
-                                    <span class="text-xs" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Last 24h</span>
-                                </div>
-                                <div class="h-16 flex items-center">
-                                     <svg class="w-full h-full" viewBox="0 0 100 40" preserveAspectRatio="none"><path d="M0 25 L10 20 L20 28 L30 22 L40 30 L50 20 L60 25 L70 15 L80 22 L90 12 L100 20" fill="none" stroke="#3b82f6" stroke-width="2"/></svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="pt-6 pb-10" style="padding: 25px 20px 40px 20px;">
+        <div class="max-w-2xl mx-auto text-center">
+            <h1 class="font-semibold" style="font-size: 32px; letter-spacing: -1px; line-height: 43.3px; font-weight: 600;">
+                <span style="color: #009296;">TRADE</span> AND INVEST IN <span style="color: #009296;">CRYPTOCURRENCY</span> WITH <span style="color: #009296;">CONFIDENCE!</span>
+            </h1>
+            <p class="mt-2" style="font-size: 16px; line-height: 24px; font-weight: 400; color: #666666;">
+                Buy, sell, and grow crypto with high-yield savings and an intuitive dashboard.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Video Section -->
+    <section class="py-16" style="padding: 0 20px;">
+        <div class="flex flex-col items-center">
+            <div class="video-container rounded-lg shadow-lg overflow-hidden w-full max-w-[560px]" style="height: 192px;">
+    <style>
+        @media (min-width: 640px) {
+            .video-container {
+                height: 326px !important;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .review-video {
+                width: 615px !important;
+                height: 455px !important;
+            }
+        }
+    </style>
+                <video 
+                    width="560" 
+                    height="326" 
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline
+                    class="w-full h-full object-cover"
+                >
+                    <source src="/public/vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <!-- Button below video -->
+            <div class="mt-8">
+                <button class="flex items-center gap-2 px-6 py-3 rounded text-white font-medium transition-colors" style="background-color: #009296; font-size: 14px; font-weight: 500;">
+                    <span>Get Started Trading - Create Account</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
             </div>
         </div>
     </section>
-
+    
     <!-- Features Section -->
-    <section id="features" class="py-16 lg:py-24 bg-black">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">
+    <section class="py-16" style="padding: 64px 20px 0 20px;">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-6">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: black; font-family: 'Inter', sans-serif; font-size: 36px; letter-spacing: -0.96px; font-weight: 600; line-height: 43.2px;">
                     The Most Powerful Crypto Platform
                 </h2>
-                <p class="max-w-3xl mx-auto" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
-                    From instant trading to high-yield savings, CapiRocket provides all the tools you need to take control of your crypto future.
+                <p class="max-w-3xl mx-auto" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 14px; line-height: 19.6px;">
+                    From instant trading to high-yield savings, tcentraFX VIP provides all the tools you need to take control of your crypto future.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in">
-                    <div class="w-10 h-10 bg-yellow-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
-                        <i data-lucide="zap" class="w-5 h-5 text-white"></i>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-8">
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="zap" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 14px; font-weight: 500;">Instant Crypto Trading</h3>
                     </div>
-                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">Instant Crypto Trading</h3>
-                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px; line-height: 19.6px;">
                         Buy and sell a wide range of cryptocurrencies in seconds with our fast and reliable trading engine.
                     </p>
                 </div>
-                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in" style="animation-delay: 0.1s;">
-                    <div class="w-10 h-10 bg-purple-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
-                        <i data-lucide="gem" class="w-5 h-5 text-white"></i>
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="gem" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 14px; font-weight: 500;">High-Yield Savings</h3>
                     </div>
-                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">High-Yield Savings</h3>
-                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px; line-height: 19.6px;">
                         Earn industry-leading interest rates on your crypto with our secure Time Deposits plans.
                     </p>
                 </div>
-                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in" style="animation-delay: 0.2s;">
-                    <div class="w-10 h-10 bg-blue-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
-                        <i data-lucide="layout-dashboard" class="w-5 h-5 text-white"></i>
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="layout-dashboard" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 14px; font-weight: 500;">Portfolio Management</h3>
                     </div>
-                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">Portfolio Management</h3>
-                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px; line-height: 19.6px;">
                         Track your investments, monitor performance, and view detailed analytics from one powerful dashboard.
                     </p>
                 </div>
-                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in" style="animation-delay: 0.3s;">
-                    <div class="w-10 h-10 bg-green-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
-                        <i data-lucide="shield-check" class="w-5 h-5 text-white"></i>
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="shield-check" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 14px; font-weight: 500;">Advanced Security</h3>
                     </div>
-                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">Advanced Security</h3>
-                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px; line-height: 19.6px;">
                         Your assets are protected with multi-layer security, cold storage, and 2FA for peace of mind.
                     </p>
                 </div>
-                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in" style="animation-delay: 0.4s;">
-                    <div class="w-10 h-10 bg-cyan-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
-                        <i data-lucide="smartphone" class="w-5 h-5 text-white"></i>
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="smartphone" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 14px; font-weight: 500;">Mobile First</h3>
                     </div>
-                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">Mobile First</h3>
-                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px; line-height: 19.6px;">
                         Manage your portfolio on the go with our fully responsive platform that works perfectly on all devices.
                     </p>
                 </div>
-                <div class="bg-black rounded-2xl p-8 transition-all duration-300 fade-in" style="animation-delay: 0.5s;">
-                    <div class="w-10 h-10 bg-indigo-500 rounded-2xl flex items-center justify-center shadow-lg mb-6">
-                        <i data-lucide="history" class="w-5 h-5 text-white"></i>
+                <div class="bg-white rounded-2xl p-3 md:p-8 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4" style="margin-top: 16px;">
+                        <div class="w-8 h-8 rounded-2xl flex items-center justify-center bg-white">
+                            <i data-lucide="history" class="w-4 h-4" style="color: #009296;"></i>
+                        </div>
+                        <h3 class="text-black" style="font-size: 14px; font-weight: 500;">Transaction History</h3>
                     </div>
-                    <h3 class="text-xl font-bold mb-3" style="color: #F6F8FA;">Transaction History</h3>
-                    <p class="leading-relaxed" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
+                    <p class="leading-relaxed text-gray-600" style="font-size: 14px; font-weight: 400; margin-top: -8px; line-height: 19.6px;">
                         Access detailed records of all your trades, deposits, and withdrawals with transparent reporting.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Trading Section -->
-    <section id="trading" class="py-16 lg:py-24 bg-black">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">
+    <section class="py-16" style="padding: 64px 20px 0 20px;">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: black; font-family: 'Inter', sans-serif; font-size: 36px; letter-spacing: -0.96px; font-weight: 600; line-height: 43.2px;">
                     Start Trading Instantly
                 </h2>
-                <p class="max-w-3xl mx-auto" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
+                <p class="max-w-3xl mx-auto" style="color: #8c8c8c; font-family: 'Inter', sans-serif; font-size: 14px; line-height: 19.6px;">
                     Dive into the world of cryptocurrency. Buy, sell, and track top assets with ease.
                 </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="crypto-cards-container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- VeChain Card (Featured) -->
-                <div class="bg-black border border-gray-600 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:shadow-gray-400/40 relative scale-105 hover:scale-[1.07] shadow-lg">
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col transition-all duration-300 relative scale-105 hover:scale-[1.07]">
                     <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
-                        <div class="bg-blue-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold shadow-md">TRENDING</div>
+                        <div class="bg-blue-400 text-white px-3 py-1 rounded-full text-xs font-bold shadow-md">TRENDING</div>
                     </div>
                     <div class="flex-grow">
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center">
+                                <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                         <path fill="url(#VET__a)" d="M20 4.75h-1.43c-.35 0-.665.2-.82.515L14 13.035l-.005-.005-1 2.07v.01l-1 2.07L7 6.825h1.425c.35 0 .67.2.82.515l3.265 6.715 1-2.07-2.635-5.425a3.21 3.21 0 0 0-2.89-1.81H4l1 2.075 6 12.425h2z"/>
                                         <defs>
@@ -260,36 +225,36 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-lg" style="color: #F6F8FA;">VeChain</h3>
-                                    <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">VET</p>
+                                    <h3 class="font-bold text-lg" style="color: black;">VeChain</h3>
+                                    <p class="text-sm" style="color: #666666; font-family: 'Inter', sans-serif;">VET</p>
                                 </div>
                             </div>
                             <div class="text-right">
-                                <p class="text-xl font-bold" style="color: #F6F8FA;">$0.035</p>
+                                <p class="text-xl font-bold" style="color: black;">$0.035</p>
                             </div>
                         </div>
                         <div class="mb-6">
                             <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-semibold text-gray-300 uppercase tracking-wider">Guaranteed APY</span>
-                                <span class="text-base font-bold text-green-400">68%</span>
+                                <span class="text-xs font-semibold text-gray-600 uppercase tracking-wider">Guaranteed APY</span>
+                                <span class="text-base font-bold text-green-600">68%</span>
                             </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
                                 <div class="bg-gray-400 h-2.5 rounded-full" style="width: 55%"></div>
                             </div>
                         </div>
                     </div>
                     <div class="flex gap-3 mt-auto">
-                        <button class="flex-1 bg-blue-600 text-white py-2.5 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-sm">Buy</button>
-                        <button class="flex-1 border border-gray-600 text-gray-300 py-2.5 rounded-lg hover:bg-gray-700 hover:text-white transition-colors font-semibold text-sm">Sell</button>
+                        <button class="flex-1 text-white py-2.5 rounded-lg transition-colors font-semibold text-sm" style="background-color: #009296;">Buy</button>
+                        <button class="flex-1 border border-gray-300 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-sm">Sell</button>
                     </div>
                 </div>
 
                 <!-- Aptos Card -->
-                <div class="bg-black border border-gray-600 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:border-gray-500 hover:shadow-gray-500/20 hover:-translate-y-2">
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:border-gray-300 hover:-translate-y-2">
                     <div class="flex-grow">
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center">
+                                <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                         <g clip-path="url(#aptos__a)">
                                             <path fill="#000" d="M24 0H0v24h24z"/>
@@ -303,36 +268,36 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-lg" style="color: #F6F8FA;">Aptos</h3>
-                                    <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">APT</p>
+                                    <h3 class="font-bold text-lg" style="color: black;">Aptos</h3>
+                                    <p class="text-sm" style="color: #666666; font-family: 'Inter', sans-serif;">APT</p>
                                 </div>
                             </div>
                             <div class="text-right">
-                                <p class="text-xl font-bold" style="color: #F6F8FA;">$8.50</p>
+                                <p class="text-xl font-bold" style="color: black;">$8.50</p>
                             </div>
                         </div>
                         <div class="mb-6">
                             <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-semibold text-gray-300 uppercase tracking-wider">Guaranteed APY</span>
-                                <span class="text-base font-bold text-green-400">52%</span>
+                                <span class="text-xs font-semibold text-gray-600 uppercase tracking-wider">Guaranteed APY</span>
+                                <span class="text-base font-bold text-green-600">52%</span>
                             </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
                                 <div class="bg-gray-400 h-2.5 rounded-full" style="width: 62%"></div>
                             </div>
                         </div>
                     </div>
                     <div class="flex gap-3 mt-auto">
-                        <button class="flex-1 bg-blue-600 text-white py-2.5 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-sm">Buy</button>
-                        <button class="flex-1 border border-gray-600 text-gray-300 py-2.5 rounded-lg hover:bg-gray-700 hover:text-white transition-colors font-semibold text-sm">Sell</button>
+                        <button class="flex-1 text-white py-2.5 rounded-lg transition-colors font-semibold text-sm" style="background-color: #009296;">Buy</button>
+                        <button class="flex-1 border border-gray-300 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-sm">Sell</button>
                     </div>
                 </div>
 
                 <!-- DeXe Card -->
-                <div class="bg-black border border-gray-600 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:border-gray-500 hover:shadow-gray-500/20 hover:-translate-y-2">
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col transition-all duration-300 hover:border-gray-300 hover:-translate-y-2">
                     <div class="flex-grow">
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center p-1">
+                                <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center p-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                         <g clip-path="url(#DEXE__a)">
                                             <path fill="#000" d="M24 0H0v24h24z"/>
@@ -344,30 +309,29 @@
                                             </clipPath>
                                         </defs>
                                     </svg>
-                                    
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-lg" style="color: #F6F8FA;">DeXe</h3>
-                                    <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">DEXE</p>
+                                    <h3 class="font-bold text-lg" style="color: black;">DeXe</h3>
+                                    <p class="text-sm" style="color: #666666; font-family: 'Inter', sans-serif;">DEXE</p>
                                 </div>
                             </div>
                             <div class="text-right">
-                                <p class="text-xl font-bold" style="color: #F6F8FA;">$11.20</p>
+                                <p class="text-xl font-bold" style="color: black;">$11.20</p>
                             </div>
                         </div>
                         <div class="mb-6">
                             <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-semibold text-gray-300 uppercase tracking-wider">Guaranteed APY</span>
-                                <span class="text-base font-bold text-green-400">45%</span>
+                                <span class="text-xs font-semibold text-gray-600 uppercase tracking-wider">Guaranteed APY</span>
+                                <span class="text-base font-bold text-green-600">45%</span>
                             </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
                                 <div class="bg-gray-400 h-2.5 rounded-full" style="width: 48%"></div>
                             </div>
                         </div>
                     </div>
                     <div class="flex gap-3 mt-auto">
-                        <button class="flex-1 bg-blue-600 text-white py-2.5 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-sm">Buy</button>
-                        <button class="flex-1 border border-gray-600 text-gray-300 py-2.5 rounded-lg hover:bg-gray-700 hover:text-white transition-colors font-semibold text-sm">Sell</button>
+                        <button class="flex-1 text-white py-2.5 rounded-lg transition-colors font-semibold text-sm" style="background-color: #009296;">Buy</button>
+                        <button class="flex-1 border border-gray-300 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-sm">Sell</button>
                     </div>
                 </div>
             </div>
@@ -375,61 +339,61 @@
     </section>
 
     <!-- Activity Section -->
-    <section id="activity" class="py-16 lg:py-24 bg-black">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-16" style="padding: 64px 20px 0 20px;">
+        <div class="max-w-6xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="space-y-6 fade-in">
-                    <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">Track Your Activity in Real-Time</h2>
-                    <p class="mb-8" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
+                <div class="space-y-6">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: black; font-family: 'Inter', sans-serif; font-size: 36px; letter-spacing: -0.96px; font-weight: 600; line-height: 43.2px;">Track Your Activity in Real-Time</h2>
+                    <p class="mb-8" style="color: #8c8c8c; font-family: 'Inter', sans-serif; font-size: 14px; line-height: 19.6px;">
                         Stay on top of your portfolio with a detailed feed of your recent transactions. See all your buys, sells, and interest earnings in one place.
                     </p>
-                    <a href="https://app.capirocket.net/login.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2 max-w-xs">
+                    <a href="https://app.tcentraFX VIP.net/login.html" class="text-white font-semibold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2 max-w-xs" style="background-color: #009296;">
                         View All Transactions
                     </a>
                 </div>
-                <div class="bg-black rounded-2xl p-6 shadow-lg border border-gray-600 backdrop-blur-sm fade-in" style="animation-delay: 0.2s;">
-                    <h3 class="text-xl font-semibold mb-6" style="color: #F6F8FA;">Recent Activity</h3>
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-6" style="color: black;">Recent Activity</h3>
                     <div class="space-y-5">
                         <!-- Transaction Item 1 -->
                         <div class="flex items-center gap-4">
-                            <div class="w-11 h-11 rounded-full bg-green-500/10 flex items-center justify-center border-2 border-green-500/30">
-                                <i data-lucide="arrow-down-left" class="w-5 h-5 text-green-400"></i>
+                            <div class="w-11 h-11 rounded-full bg-green-100 flex items-center justify-center border-2 border-green-200">
+                                <i data-lucide="arrow-down-left" class="w-5 h-5 text-green-600"></i>
                             </div>
                             <div class="flex-grow">
-                                <p class="font-semibold" style="color: #F6F8FA;">Bought Bitcoin</p>
-                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Using Wallet Balance</p>
+                                <p class="font-semibold" style="color: black;">Bought Bitcoin</p>
+                                <p class="text-sm" style="color: #666666; font-family: 'Inter', sans-serif;">Using Wallet Balance</p>
                             </div>
                             <div class="text-right">
-                                <p class="font-semibold" style="color: #F6F8FA;">+$500.00</p>
-                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Just now</p>
+                                <p class="font-semibold" style="color: black;">+$500.00</p>
+                                <p class="text-sm" style="color: #666666; font-family: 'Inter', sans-serif;">Just now</p>
                             </div>
                         </div>
                         <!-- Transaction Item 2 -->
                         <div class="flex items-center gap-4">
-                            <div class="w-11 h-11 rounded-full bg-yellow-500/10 flex items-center justify-center border-2 border-yellow-500/30">
-                                <i data-lucide="award" class="w-5 h-5 text-yellow-400"></i>
+                            <div class="w-11 h-11 rounded-full bg-yellow-100 flex items-center justify-center border-2 border-yellow-200">
+                                <i data-lucide="award" class="w-5 h-5 text-yellow-600"></i>
                             </div>
                             <div class="flex-grow">
-                                <p class="font-semibold" style="color: #F6F8FA;">Interest Earned</p>
-                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Super Plan (180 Days)</p>
+                                <p class="font-semibold" style="color: black;">Interest Earned</p>
+                                <p class="text-sm" style="color: #666666; font-family: 'Inter', sans-serif;">Super Plan (180 Days)</p>
                             </div>
                             <div class="text-right">
-                                <p class="font-semibold text-green-400">+$25.50</p>
-                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Yesterday</p>
+                                <p class="font-semibold text-green-600">+$25.50</p>
+                                <p class="text-sm" style="color: #666666; font-family: 'Inter', sans-serif;">Yesterday</p>
                             </div>
                         </div>
                         <!-- Transaction Item 3 -->
                         <div class="flex items-center gap-4">
-                            <div class="w-11 h-11 rounded-full bg-red-500/10 flex items-center justify-center border-2 border-red-500/30">
-                                <i data-lucide="arrow-up-right" class="w-5 h-5 text-red-400"></i>
+                            <div class="w-11 h-11 rounded-full bg-red-100 flex items-center justify-center border-2 border-red-200">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5 text-red-600"></i>
                             </div>
                             <div class="flex-grow">
-                                <p class="font-semibold" style="color: #F6F8FA;">Sold Ethereum</p>
-                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Credited to Wallet</p>
+                                <p class="font-semibold" style="color: black;">Sold Ethereum</p>
+                                <p class="text-sm" style="color: #666666; font-family: 'Inter', sans-serif;">Credited to Wallet</p>
                             </div>
                             <div class="text-right">
-                                <p class="font-semibold" style="color: #F6F8FA;">-$320.00</p>
-                                <p class="text-sm" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">2 days ago</p>
+                                <p class="font-semibold" style="color: black;">-$320.00</p>
+                                <p class="text-sm" style="color: #666666; font-family: 'Inter', sans-serif;">2 days ago</p>
                             </div>
                         </div>
                     </div>
@@ -437,314 +401,426 @@
             </div>
         </div>
     </section>
-
-    <!-- Savings Plans Section -->
-    <section id="plans" class="py-16 lg:py-24 bg-black">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">
-                    Grow Your Wealth with Time Deposits
+    
+    <!-- Membership Plans Section -->
+    <section class="py-16" style="background-color: #002A2B; padding: 64px 20px; margin-top: 64px;">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: white; font-family: 'Inter', sans-serif; font-size: 36px; letter-spacing: -0.96px; font-weight: 600; line-height: 43.2px;">
+                    Membership Plans
                 </h2>
-                <p class="max-w-3xl mx-auto" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
-                    Choose from our flexible savings plans and watch your crypto grow with guaranteed returns.
+                <p class="max-w-3xl mx-auto" style="color: #cccccc; font-family: 'Inter', sans-serif; font-size: 14px; line-height: 19.6px;">
+                    Choose from our flexible membership plans and watch your crypto grow with guaranteed returns.
                 </p>
-            </div>
-
-            <div class="grid lg:grid-cols-3 gap-8">
-                <!-- Plan 1 -->
-                <div class="bg-black rounded-2xl p-8 shadow-lg border border-gray-600 fade-in flex flex-col transition-all duration-300 hover:border-gray-500 hover:shadow-gray-500/20 hover:-translate-y-2">
-                    <div class="flex-grow">
-                        <h3 class="text-2xl font-bold" style="color: #F6F8FA;">Starter Plan</h3>
-                        <p class="text-blue-400 font-semibold">90 Days Lock-in</p>
-                        <div class="text-5xl font-bold my-6" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">18.5% <span class="text-2xl font-semibold" style="color: #A1A4A5; font-family: 'Instrument Serif', serif;">Weekly</span></div>
-                        <ul class="space-y-3" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>$1,000 - $50,000</span></li>
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>Weekly Interest Payout</span></li>
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>Great for starting out</span></li>
-                        </ul>
-                    </div>
-                    <a href="#" class="mt-8 w-full bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
-                        Get Started
-                    </a>
-                </div>
-                <!-- Plan 2 (Featured) -->
-                <div class="bg-blue-600 rounded-2xl p-8 shadow-2xl border border-blue-500 fade-in flex flex-col relative scale-105 transition-all duration-300 hover:shadow-blue-400/40 hover:scale-[1.07]">
-                     <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
-                        <div class="bg-white text-blue-600 px-4 py-1 rounded-full text-sm font-bold shadow-md">MOST POPULAR</div>
-                    </div>
-                    <div class="flex-grow">
-                        <h3 class="text-2xl font-bold text-white">Super Plan</h3>
-                        <p class="text-blue-200 font-semibold">180 Days Lock-in</p>
-                        <div class="text-5xl font-bold text-white my-6" style="font-family: 'Instrument Serif', serif;">25.5% <span class="text-2xl font-semibold text-blue-200" style="font-family: 'Instrument Serif', serif;">Weekly</span></div>
-                        <ul class="space-y-3 text-blue-100">
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-white"></i><span>$50,000 - $500,000</span></li>
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-white"></i><span>Weekly Interest Payout</span></li>
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-white"></i><span>Best value for serious investors</span></li>
-                        </ul>
-                    </div>
-                    <a href="#" class="mt-8 w-full bg-white hover:bg-blue-100 text-blue-600 font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
-                        Get Started
-                    </a>
-                </div>
-                <!-- Plan 3 -->
-                <div class="bg-black rounded-2xl p-8 shadow-lg border border-gray-600 fade-in flex flex-col transition-all duration-300 hover:border-gray-500 hover:shadow-gray-500/20 hover:-translate-y-2">
-                    <div class="flex-grow">
-                        <h3 class="text-2xl font-bold" style="color: #F6F8FA;">Premium Plan</h3>
-                        <p class="text-blue-400 font-semibold">180 Days Lock-in</p>
-                        <div class="text-5xl font-bold my-6" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">30% <span class="text-2xl font-semibold" style="color: #A1A4A5; font-family: 'Instrument Serif', serif;">Weekly</span></div>
-                        <ul class="space-y-3" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>$500,000 - $5,000,000</span></li>
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>Weekly Interest Payout</span></li>
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>For high-volume traders</span></li>
-                        </ul>
-                    </div>
-                    <a href="#" class="mt-8 w-full bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
-                        Get Started
-                    </a>
-                </div>
-                <!-- Plan 4 -->
-                <div class="bg-black rounded-2xl p-8 shadow-lg border border-gray-600 fade-in flex flex-col transition-all duration-300 hover:border-gray-500 hover:shadow-gray-500/20 hover:-translate-y-2 lg:mt-8">
-                    <div class="flex-grow">
-                        <h3 class="text-2xl font-bold" style="color: #F6F8FA;">Platinum Plan</h3>
-                        <p class="text-blue-400 font-semibold">365 Days Lock-in</p>
-                        <div class="text-5xl font-bold my-6" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">35% <span class="text-2xl font-semibold" style="color: #A1A4A5; font-family: 'Instrument Serif', serif;">Weekly</span></div>
-                        <ul class="space-y-3" style="color: #A1A4A5; font-family: 'Inter', sans-serif;">
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>$5,000,000+</span></li>
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>Weekly Interest Payout</span></li>
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i><span>For institutional partners</span></li>
-                        </ul>
-                    </div>
-                    <a href="#" class="mt-8 w-full bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
-                        Get Started
-                    </a>
-                </div>
-                <!-- Plan 5 (Special) -->
-                <div class="bg-black text-white rounded-2xl p-8 shadow-2xl border border-gray-600 fade-in flex flex-col transition-all duration-300 hover:shadow-gray-400/40 hover:-translate-y-2 lg:col-span-2 lg:mt-8">
-                    <div class="flex-grow">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                 <h3 class="text-2xl font-bold">Elite Coin Booster</h3>
-                                 <p class="text-purple-200 font-semibold">30 Days Sprint</p>
-                            </div>
-                            <div class="bg-white text-purple-600 px-3 py-1 rounded-full text-sm font-bold shadow-md">SPECIAL</div>
-                        </div>
-
-                        <div class="text-6xl font-bold my-6" style="font-family: 'Instrument Serif', serif;">64.5% <span class="text-3xl font-semibold text-purple-200" style="font-family: 'Instrument Serif', serif;">Weekly</span></div>
-                        <ul class="space-y-3">
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5"></i><span>$75,000 - $10,000,000 Investment</span></li>
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5"></i><span>Aggressive Short-Term Growth</span></li>
-                            <li class="flex items-center gap-3"><i data-lucide="check-circle" class="w-5 h-5"></i><span>Limited Time Offer</span></li>
-                        </ul>
-                    </div>
-                    <a href="#" class="mt-8 w-full bg-white hover:bg-purple-100 text-purple-600 font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
-                        Boost Your Coins
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Security Section -->
-    <section id="security" class="py-16 lg:py-24 bg-black">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <div class="relative fade-in order-last lg:order-first" style="animation-delay: 0.2s;">
-                    <div class="bg-black rounded-2xl shadow-xl p-8 border border-gray-600">
-                        <div class="relative w-48 h-48 mx-auto">
-                            <div class="absolute inset-0 bg-gray-800 rounded-full blur-xl opacity-50 animate-pulse"></div>
-                            <div class="absolute inset-0 bg-gray-800 rounded-full flex items-center justify-center">
-                                <i data-lucide="shield-check" class="w-24 h-24 text-white"></i>
-                            </div>
-                        </div>
-                        <div class="text-center mt-8">
-                            <h3 class="text-2xl font-bold mb-2" style="color: #F6F8FA;">Fort-Knox Protection</h3>
-                            <p style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Your assets are protected with military-grade encryption and offline cold storage.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="space-y-6 fade-in">
-                    <h2 class="text-3xl lg:text-4xl font-bold" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">Your Security is Our Priority</h2>
-                    <p class="" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
-                        We use industry-leading security measures to protect your financial data and ensure your peace of mind.
-                    </p>
-
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-4">
-                            <div class="w-6 h-6 bg-blue-900/50 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <i data-lucide="check-circle" class="w-4 h-4 text-blue-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold" style="color: #F6F8FA;">256-bit SSL Encryption</h3>
-                                <p style="color: #A1A4A5; font-family: 'Inter', sans-serif;">All data is encrypted using bank-level security protocols.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                             <div class="w-6 h-6 bg-blue-900/50 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <i data-lucide="check-circle" class="w-4 h-4 text-blue-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold" style="color: #F6F8FA;">Two-Factor Authentication</h3>
-                                <p style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Additional security layer for account access.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                             <div class="w-6 h-6 bg-blue-900/50 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <i data-lucide="check-circle" class="w-4 h-4 text-blue-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold" style="color: #F6F8FA;">Cold Storage</h3>
-                                <p style="color: #A1A4A5; font-family: 'Inter', sans-serif;">Majority of user funds are held in secure offline storage.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-16 lg:py-24 bg-black">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: #F6F8FA; font-family: 'Instrument Serif', serif;">Trusted by Thousands</h2>
-                <p class="" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">See what our customers have to say about their CapiRocket experience.</p>
             </div>
             
-            <div class="swiper testimonial-swiper fade-in">
-                <div class="swiper-wrapper pb-16">
-                    <div class="swiper-slide">
-                        <div class="bg-black border border-gray-600 rounded-lg p-6 h-full flex flex-col justify-between">
-                            <div>
-                                <div class="flex items-center gap-1 mb-4 text-yellow-400">
-                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                                </div>
-                                <p class="mb-4" style="color: #A1A4A5;">"CapiRocket has completely transformed how I manage my crypto. The savings plans are a game-changer for passive income."</p>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center font-semibold">S</div>
-                                <div>
-                                    <div class="font-semibold" style="color: #F6F8FA;">Sarah J.</div>
-                                    <div class="text-sm" style="color: #A1A4A5;">Crypto Investor</div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Private Community Members -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 flex flex-col transition-all duration-300 hover:border-gray-300">
+                    <div class="flex-grow">
+                        <h3 class="mb-2" style="color: black; font-weight: 600; letter-spacing: -1px; font-size: 32px;">Private Community Members</h3>
+                        <p class="mb-4" style="font-size: 14px; color: black; font-weight: 400;">3 months - 2 years</p>
+                        <div class="my-4" style="color: black; font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -1px; font-size: 36px;">20.5% <span style="color: black; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400;">Weekly</span></div>
+                        <ul class="space-y-3" style="color: black; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400;">
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>$5,000 - $200,000</span></li>
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>Weekly Interest Payout</span></li>
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>Great for starting out</span></li>
+                        </ul>
                     </div>
-                    <div class="swiper-slide">
-                         <div class="bg-black border border-gray-600 rounded-lg p-6 h-full flex flex-col justify-between">
-                             <div>
-                                <div class="flex items-center gap-1 mb-4 text-yellow-400">
-                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                                </div>
-                                <p class="mb-4" style="color: #A1A4A5;">"The platform is incredibly intuitive and the security features give me complete peace of mind. Highly recommended!"</p>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center font-semibold">M</div>
-                                <div>
-                                    <div class="font-semibold" style="color: #F6F8FA;">Michael C.</div>
-                                    <div class="text-sm" style="color: #A1A4A5;">Day Trader</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                         <div class="bg-black border border-gray-600 rounded-lg p-6 h-full flex flex-col justify-between">
-                             <div>
-                                <div class="flex items-center gap-1 mb-4 text-yellow-400">
-                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                                </div>
-                                <p class="mb-4" style="color: #A1A4A5;">"Finally, a crypto platform that's both powerful for pros and easy for beginners. The mobile experience is flawless."</p>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center font-semibold">E</div>
-                                <div>
-                                    <div class="font-semibold" style="color: #F6F8FA;">Emily R.</div>
-                                    <div class="text-sm" style="color: #A1A4A5;">Tech Executive</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="#" class="mt-8 w-full text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2" style="background-color: #009296;">
+                        Get Started
+                    </a>
                 </div>
-                <div class="swiper-pagination"></div>
+
+                <!-- Silver Members -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 flex flex-col transition-all duration-300 hover:border-gray-300">
+                    <div class="flex-grow">
+                        <h3 class="mb-2" style="color: black; font-weight: 600; letter-spacing: -1px; font-size: 32px;">Silver Members</h3>
+                        <p class="mb-4" style="font-size: 14px; color: black; font-weight: 400;">3 months - 1 year</p>
+                        <div class="my-4" style="color: black; font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -1px; font-size: 36px;">32.5% <span style="color: black; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400;">Weekly</span></div>
+                        <ul class="space-y-3" style="color: black; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400;">
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>$100,000 - $500,000</span></li>
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>Weekly Interest Payout</span></li>
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>Best value for serious investors</span></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="mt-8 w-full text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2" style="background-color: #009296;">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Gold Members -->
+                <div class="rounded-2xl p-6 border flex flex-col transition-all duration-300 hover:border-yellow-300" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-color: #FFD700;">
+                    <div class="flex-grow">
+                        <h3 class="mb-2" style="color: black; font-weight: 600; letter-spacing: -1px; font-size: 32px;">Gold Members</h3>
+                        <p class="mb-4" style="font-size: 14px; color: black; font-weight: 400;">2 months - 1 year</p>
+                        <div class="my-4" style="color: black; font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -1px; font-size: 36px;">50.8% <span style="color: black; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400;">Weekly</span></div>
+                        <ul class="space-y-3" style="color: black; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400;">
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>$500,000 - $5 million</span></li>
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>Weekly Interest Payout</span></li>
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>For high-volume traders</span></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="mt-8 w-full text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2" style="background-color: #009296;">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Elite VIP -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-200 flex flex-col transition-all duration-300 hover:border-gray-300 lg:mt-8">
+                    <div class="flex-grow">
+                        <h3 class="mb-2" style="color: black; font-weight: 600; letter-spacing: -1px; font-size: 32px;">Elite VIP</h3>
+                        <p class="mb-4" style="font-size: 14px; color: black; font-weight: 400;">3 months - 2 years</p>
+                        <div class="my-4" style="color: black; font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -1px; font-size: 36px;">75.5% <span style="color: black; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400;">Weekly</span></div>
+                        <ul class="space-y-3" style="color: black; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400;">
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>$1 million+</span></li>
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>Weekly Interest Payout</span></li>
+                            <li class="flex items-center gap-3"><span style="color: #009296;">✓</span><span>For institutional partners</span></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="mt-8 w-full text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2" style="background-color: #009296;">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Elite VVIP Premium -->
+                <div class="text-black rounded-2xl p-6 border flex flex-col transition-all duration-300 lg:col-span-2 lg:mt-8" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #404040 100%); border-color: #FFD700;">
+                    <div class="flex-grow">
+                        <h3 class="mb-2" style="color: #FFD700; font-weight: 600; letter-spacing: -1px; font-size: 32px;">Elite VVIP Premium</h3>
+                        <p class="mb-4" style="font-size: 14px; color: #E5E5E5; font-weight: 400;">3 months - 2 years</p>
+                        <div class="my-4" style="color: #FFD700; font-family: 'Inter', sans-serif; font-weight: 600; letter-spacing: -1px; font-size: 36px;">92.5% <span style="color: #E5E5E5; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400;">Weekly</span></div>
+                        <ul class="space-y-3" style="color: #E5E5E5; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400;">
+                            <li class="flex items-center gap-3"><span style="color: #FFD700;">✓</span><span>$10 million+ Investment</span></li>
+                            <li class="flex items-center gap-3"><span style="color: #FFD700;">✓</span><span>Aggressive Growth Strategy</span></li>
+                            <li class="flex items-center gap-3"><span style="color: #FFD700;">✓</span><span>Exclusive VIP Treatment</span></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="mt-8 w-full text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2" style="background-color: #009296;">
+                        Boost Your Investment
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-16 lg:py-24 bg-black">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="max-w-3xl mx-auto space-y-8 fade-in">
-                <h2 class="text-3xl lg:text-4xl font-bold text-white" style="font-family: 'Instrument Serif', serif;">Ready to Launch Your Crypto Journey?</h2>
-                <p class="text-xl" style="color: #A1A4A5; font-family: 'Inter', sans-serif; font-size: 18px;">
-                    Join thousands of users who trust CapiRocket to manage and grow their crypto assets. Get started today with a free account.
+    <!-- Review Section -->
+    <section class="py-16" style="padding: 64px 20px;">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: black; font-family: 'Inter', sans-serif; font-size: 36px; letter-spacing: -0.96px; font-weight: 600; line-height: 43.2px;">
+                    Message From our community
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2" style="gap: 10px;">
+                <!-- Video 1 - Alexia, 26 - Bulgaria -->
+                <div>
+                    <div class="relative rounded-lg overflow-hidden cursor-pointer review-video" style="width: 100%; height: 300px; max-width: 100%; margin: 0 auto;" onclick="playVideo(this)">
+                        <img src="/public/alexia26.webp" alt="Alexia Video" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <div class="w-16 h-16 md:w-24 md:h-24 rounded-full flex items-center justify-center" style="background-color: #009296;">
+                                <i data-lucide="play" class="w-8 h-8 md:w-12 md:h-12 text-white ml-1"></i>
+                            </div>
+                        </div>
+                        <video class="w-full h-full object-cover absolute inset-0 hidden" controls>
+                            <source src="/public/alexia26.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- Name and Country Overlay -->
+                        <div class="absolute bottom-0 left-0 right-0 p-2 md:p-4">
+                            <div class="inline-block px-3 py-1 md:px-4 md:py-2 rounded-lg text-white text-xs md:text-sm" style="background-color: #009296; font-weight: 400;">
+                                Alexia, 26 - Bulgaria
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 - ben, 21 - Germany -->
+                <div>
+                    <div class="relative rounded-lg overflow-hidden cursor-pointer review-video" style="width: 100%; height: 300px; max-width: 100%; margin: 0 auto;" onclick="playVideo(this)">
+                        <img src="/public/ben21.webp" alt="ben Video" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <div class="w-16 h-16 md:w-24 md:h-24 rounded-full flex items-center justify-center" style="background-color: #009296;">
+                                <i data-lucide="play" class="w-8 h-8 md:w-12 md:h-12 text-white ml-1"></i>
+                            </div>
+                        </div>
+                        <video class="w-full h-full object-cover absolute inset-0 hidden" controls>
+                            <source src="/public/ben21.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- Name and Country Overlay -->
+                        <div class="absolute bottom-0 left-0 right-0 p-2 md:p-4">
+                            <div class="inline-block px-3 py-1 md:px-4 md:py-2 rounded-lg text-white text-xs md:text-sm" style="background-color: #009296; font-weight: 400;">
+                                ben, 21 - Germany
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 3 - danny, 29 - United Kingdom -->
+                <div>
+                    <div class="relative rounded-lg overflow-hidden cursor-pointer review-video" style="width: 100%; height: 300px; max-width: 100%; margin: 0 auto;" onclick="playVideo(this)">
+                        <img src="/public/danny29.webp" alt="danny Video" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <div class="w-16 h-16 md:w-24 md:h-24 rounded-full flex items-center justify-center" style="background-color: #009296;">
+                                <i data-lucide="play" class="w-8 h-8 md:w-12 md:h-12 text-white ml-1"></i>
+                            </div>
+                        </div>
+                        <video class="w-full h-full object-cover absolute inset-0 hidden" controls>
+                            <source src="/public/danny29.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- Name and Country Overlay -->
+                        <div class="absolute bottom-0 left-0 right-0 p-2 md:p-4">
+                            <div class="inline-block px-3 py-1 md:px-4 md:py-2 rounded-lg text-white text-xs md:text-sm" style="background-color: #009296; font-weight: 400;">
+                                danny, 29 - United Kingdom
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 4 - david, 18 - Netherlands -->
+                <div>
+                    <div class="relative rounded-lg overflow-hidden cursor-pointer review-video" style="width: 100%; height: 300px; max-width: 100%; margin: 0 auto;" onclick="playVideo(this)">
+                        <img src="/public/david18.webp" alt="david Video" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <div class="w-16 h-16 md:w-24 md:h-24 rounded-full flex items-center justify-center" style="background-color: #009296;">
+                                <i data-lucide="play" class="w-8 h-8 md:w-12 md:h-12 text-white ml-1"></i>
+                            </div>
+                        </div>
+                        <video class="w-full h-full object-cover absolute inset-0 hidden" controls>
+                            <source src="/public/david18.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- Name and Country Overlay -->
+                        <div class="absolute bottom-0 left-0 right-0 p-2 md:p-4">
+                            <div class="inline-block px-3 py-1 md:px-4 md:py-2 rounded-lg text-white text-xs md:text-sm" style="background-color: #009296; font-weight: 400;">
+                                david, 18 - Netherlands
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16" style="padding: 64px 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4" style="color: black; font-family: 'Inter', sans-serif; font-size: 36px; letter-spacing: -0.96px; font-weight: 600; line-height: 43.2px;">
+                    Frequently Asked Questions
+                </h2>
+                <p class="max-w-3xl mx-auto" style="color: #8c8c8c; font-family: 'Inter', sans-serif; font-size: 14px; line-height: 19.6px;">
+                    Find quick answers to common questions about tcentraFX VIP and our services.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://app.capirocket.net/register.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors flex items-center justify-center gap-2">
-                        Get Started for Free
-                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                    </a>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-lg border border-gray-200">
+                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold" style="color: black; font-size: 14px; font-weight: 400;">How do I create an account with tcentraFX VIP?</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p style="color: #8c8c8c; font-size: 14px; font-weight: 400;">You can create an account by clicking the "Get Started" button on our homepage. The process is fast, secure, and only takes a few minutes. Simply provide your email address, create a strong password, and verify your identity.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-lg border border-gray-200">
+                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold" style="color: black; font-size: 14px; font-weight: 400;">What are the fees for trading cryptocurrencies?</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p style="color: #8c8c8c; font-size: 14px; font-weight: 400;">We offer a competitive and transparent fee structure. Trading fees start as low as 0.1% and decrease with higher trading volumes. There are no hidden fees, and all costs are clearly displayed before you confirm any transaction.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-lg border border-gray-200">
+                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold" style="color: black; font-size: 14px; font-weight: 400;">Is my cryptocurrency safe with tcentraFX VIP?</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p style="color: #8c8c8c; font-size: 14px; font-weight: 400;">Security is our top priority. We use industry-leading security measures, including cold storage for the majority of assets, multi-factor authentication, and continuous monitoring to protect your funds. Your assets are insured and protected by advanced encryption.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-lg border border-gray-200">
+                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold" style="color: black; font-size: 14px; font-weight: 400;">How do the membership plans work and what are the interest rates?</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p style="color: #8c8c8c; font-size: 14px; font-weight: 400;">Our membership plans offer guaranteed weekly returns ranging from 20.5% to 92.5% depending on your investment level. Plans range from Private Community ($5K-$200K) to Elite VVIP Premium ($10M+). All plans include weekly interest payouts and flexible duration options.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-lg border border-gray-200">
+                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold" style="color: black; font-size: 14px; font-weight: 400;">What cryptocurrencies can I trade on tcentraFX VIP?</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p style="color: #8c8c8c; font-size: 14px; font-weight: 400;">We support a wide range of popular cryptocurrencies including Bitcoin, Ethereum, VeChain, Aptos, DeXe, and many more. Our platform is constantly adding new coins based on market demand and user feedback.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-white rounded-lg border border-gray-200">
+                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold" style="color: black; font-size: 14px; font-weight: 400;">How can I contact customer support?</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p style="color: #8c8c8c; font-size: 14px; font-weight: 400;">Our dedicated support team is available 24/7. You can reach us via email at support@tcentraFX VIP.net, join our Telegram community for quick help, or use the contact form on our website. We typically respond within 24 hours.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="bg-white rounded-lg border border-gray-200">
+                    <button class="faq-toggle w-full text-left p-6 focus:outline-none rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold" style="color: black; font-size: 14px; font-weight: 400;">Can I withdraw my funds at any time?</h3>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p style="color: #8c8c8c; font-size: 14px; font-weight: 400;">Yes, you can withdraw your funds at any time. However, membership plan investments have specific lock-in periods (3 months to 2 years) to ensure the guaranteed returns. Trading funds can be withdrawn immediately, while savings plan funds follow the agreed terms.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-12 border-t border-gray-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                            <span class="text-white font-bold text-lg">C</span>
-                        </div>
-                        <span class="text-2xl font-bold" style="font-family: 'Instrument Serif', serif;">CapiRocket</span>
-                    </div>
-                    <p style="color: #A1A4A5;">
-                        The modern crypto platform that puts you in control.
+    <footer style="background-color: #002A2B; padding: 64px 20px 40px 20px;">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Company Info -->
+                <div class="md:col-span-1">
+                    <img src="/public/logof.png" alt="CentralFX VIP Logo" style="height: 60px; margin-bottom: 20px;">
+                    <p style="color: #cccccc; font-size: 14px; font-weight: 400; line-height: 19.6px;">
+                        Your trusted partner in cryptocurrency trading and investment.
                     </p>
                 </div>
 
+                <!-- Membership Plans -->
                 <div>
-                    <h3 class="font-semibold mb-4" style="color: #F6F8FA;">Product</h3>
-                    <div class="space-y-2" style="color: #A1A4A5;">
-                        <div><a href="#features" class="hover:text-white transition-colors">Features</a></div>
-                        <div><a href="#plans" class="hover:text-white transition-colors">Savings Plans</a></div>
-                        <div><a href="#security" class="hover:text-white transition-colors">Security</a></div>
-                    </div>
+                    <h3 style="color: white; font-size: 16px; font-weight: 600; margin-bottom: 16px;">Membership Plans</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Private Community</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Silver Members</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Gold Members</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Elite VIP</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Elite VVIP Premium</a></li>
+                    </ul>
                 </div>
 
+                <!-- Security -->
                 <div>
-                    <h3 class="font-semibold mb-4" style="color: #F6F8FA;">Company</h3>
-                    <div class="space-y-2" style="color: #A1A4A5;">
-                        <div><a href="about.html" class="hover:text-white transition-colors">About Us</a></div>
-                        <div><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></div>
-                    </div>
+                    <h3 style="color: white; font-size: 16px; font-weight: 600; margin-bottom: 16px;">Security</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Security Features</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Two-Factor Authentication</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Data Protection</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Compliance</a></li>
+                    </ul>
                 </div>
 
+                <!-- Company -->
                 <div>
-                    <h3 class="font-semibold mb-4" style="color: #F6F8FA;">Legal</h3>
-                    <div class="space-y-2" style="color: #A1A4A5;">
-                        <div><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></div>
-                        <div><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></div>
-                    </div>
+                    <h3 style="color: white; font-size: 16px; font-weight: 600; margin-bottom: 16px;">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">About Us</a></li>
+                        <li><a href="contact.html" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Contact Us</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Careers</a></li>
+                        <li><a href="#" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Press</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <div class="text-sm" style="color: #A1A4A5;">© 2024 CapiRocket. All rights reserved.</div>
-                <div class="flex items-center gap-6 mt-4 md:mt-0" style="color: #A1A4A5;">
-                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-                    <a href="#" class="hover:text-white transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
+            <!-- Legal Section -->
+            <div class="border-t border-gray-600 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <p style="color: #cccccc; font-size: 14px; font-weight: 400;">
+                            © 2024 CentralFX VIP. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="privacy.html" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Privacy Policy</a>
+                        <a href="terms.html" style="color: #cccccc; font-size: 14px; font-weight: 400; text-decoration: none;">Terms of Service</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    
+    <script>
+        lucide.createIcons();
+        
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.classList.add('hidden');
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
 
-    <!-- Floating Telegram Button -->
-    <a href="https://t.me/capirocket" target="_blank" rel="noopener noreferrer" class="fixed bottom-8 right-8 bg-sky-500 w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg z-50 transition-transform duration-300 hover:scale-110 animate-bounce-float">
-        <i data-lucide="send" class="w-8 h-8 -translate-x-px translate-y-px"></i>
-    </a>
+        // Video Play Functionality
+        function playVideo(element) {
+            const video = element.querySelector('video');
+            const img = element.querySelector('img');
+            const overlay = element.querySelector('.absolute.inset-0');
+            
+            // Hide the image and overlay
+            img.style.display = 'none';
+            overlay.style.display = 'none';
+            
+            // Show and play the video
+            video.classList.remove('hidden');
+            video.play();
+            
+            // Optional: Pause other videos when playing a new one
+            document.querySelectorAll('video').forEach(v => {
+                if (v !== video && !v.paused) {
+                    v.pause();
+                    v.classList.add('hidden');
+                    const parent = v.closest('.relative');
+                    const parentImg = parent.querySelector('img');
+                    const parentOverlay = parent.querySelector('.absolute.inset-0');
+                    parentImg.style.display = 'block';
+                    parentOverlay.style.display = 'flex';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
