@@ -33,25 +33,25 @@
     <!-- Header Container -->
     <header class="w-full flex items-center justify-between" style="background-color: white; height: 60px; padding: 0 20px;">
         <!-- Logo -->
-        <div class="flex items-center">
+        <a href="index.html" class="flex items-center">
             <img src="/public/logo.webp" alt="tcentraFX VIP Logo" class="w-auto" style="height: 100px;">
             <span class="font-bold italic" style="color: #009296; font-size: 18px; margin-left: -12px;">VIP</span>
-        </div>
+        </a>
         
         <!-- Navigation Links -->
         <nav class="hidden md:flex items-center space-x-8">
-            <a href="home.html" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Home</a>
-            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Features</a>
-            <a href="#" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Plans</a>
-            <a href="aboutus.html" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">About</a>
+            <a href="index.html" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Home</a>
+            <a href="index.html#features" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Features</a>
+            <a href="index.html#plans" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Plans</a>
+            <a href="about.html" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">About</a>
             <a href="contact.html" class="text-black hover:text-gray-600 transition-colors" style="font-size: 12px; font-weight: 500;">Contact</a>
         </nav>
         
         <!-- Create Account Button -->
-        <button class="flex items-center gap-2 px-4 py-2 rounded text-white transition-colors" style="background-color: #009296; height: 32px; font-size: 12px; font-weight: 500;">
+        <a href="https://app.tradecenfxvip.com/register" class="flex items-center gap-2 px-4 py-2 rounded text-white transition-colors" style="background-color: #009296; height: 32px; font-size: 12px; font-weight: 500;">
             <span>Create Account</span>
             <i data-lucide="arrow-right" class="w-4 h-4"></i>
-        </button>
+        </a>
     </header>
 
     <!-- Contact Us Section -->
@@ -72,7 +72,7 @@
                     <h2 style="color: black; font-family: 'Inter', sans-serif; font-size: 24px; letter-spacing: -0.96px; font-weight: 600; line-height: 28.8px; margin-bottom: 24px;">
                         Send us a Message
                     </h2>
-                    <form class="space-y-6">
+                    <form id="contact-form" action="https://formspree.io/f/meoppbpa" method="POST" class="space-y-6">
                         <div>
                             <label for="name" style="color: #666666; font-size: 14px; font-weight: 500; margin-bottom: 8px; display: block;">Full Name</label>
                             <input type="text" id="name" name="name" required 
@@ -101,13 +101,34 @@
                                       style="font-size: 14px; font-weight: 400;"></textarea>
                         </div>
                         
-                        <button type="submit" 
+                        <button type="submit" id="submit-btn"
                                 class="w-full text-white font-semibold px-6 py-3 rounded-lg flex items-center justify-center gap-2"
                                 style="background-color: #009296; font-size: 14px; font-weight: 500;">
                             Send Message
                             <i data-lucide="send" class="w-4 h-4"></i>
                         </button>
                     </form>
+                    
+                    <!-- Confirmation Screen -->
+                    <div id="confirmation-screen" class="hidden">
+                        <div class="text-center py-12">
+                            <div class="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center" style="background-color: #009296;">
+                                <i data-lucide="check-circle" class="w-12 h-12 text-white"></i>
+                            </div>
+                            <h2 style="color: black; font-family: 'Inter', sans-serif; font-size: 28px; letter-spacing: -0.96px; font-weight: 600; line-height: 33.6px; margin-bottom: 16px;">
+                                Message Sent Successfully!
+                            </h2>
+                            <p style="color: #666666; font-family: 'Inter', sans-serif; font-size: 16px; line-height: 24px; font-weight: 400; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto;">
+                                Thank you for contacting us. We've received your message and will get back to you within 24 hours.
+                            </p>
+                            <button onclick="resetForm()" 
+                                    class="text-white font-semibold px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2"
+                                    style="background-color: #009296; font-size: 14px; font-weight: 500;">
+                                Send Another Message
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Contact Information -->
@@ -146,10 +167,10 @@
                                 <p style="color: #666666; font-size: 14px; line-height: 22.4px; font-weight: 300; margin-bottom: 8px;">
                                     Send us an email and we'll get back to you within 24 hours.
                                 </p>
-                                <a href="mailto:support@tcentrafxvip.com" 
+                                <a href="mailto:support@tradecenfxvip.com" 
                                    class="text-blue-600 hover:text-blue-800"
                                    style="font-size: 14px; font-weight: 500; text-decoration: none;">
-                                    support@tcentrafxvip.com
+                                    support@tradecenfxvip.com
                                 </a>
                             </div>
                         </div>
@@ -251,10 +272,62 @@
         lucide.createIcons();
         
         // Form submission handler
-        document.querySelector('form').addEventListener('submit', function(e) {
+        const form = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const confirmationScreen = document.getElementById('confirmation-screen');
+        
+        form.addEventListener('submit', async function(e) {
             e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
+            
+            // Show loading state
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Sending...';
+            submitBtn.disabled = true;
+            
+            try {
+                // Create form data
+                const formData = new FormData(form);
+                
+                // Submit to Formspree
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Show confirmation screen
+                    form.style.display = 'none';
+                    confirmationScreen.classList.remove('hidden');
+                    lucide.createIcons(); // Reinitialize icons for the confirmation screen
+                } else {
+                    // Handle error
+                    const data = await response.json();
+                    if (data.errors) {
+                        alert('There was an error sending your message: ' + data.errors.map(error => error.message).join(', '));
+                    } else {
+                        alert('There was an error sending your message. Please try again.');
+                    }
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                console.error('Form submission error:', error);
+                alert('There was an error sending your message. Please try again.');
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
         });
+        
+        // Reset form function
+        function resetForm() {
+            form.reset();
+            form.style.display = 'block';
+            confirmationScreen.classList.add('hidden');
+            submitBtn.disabled = false;
+        }
     </script>
 </body>
 </html>
