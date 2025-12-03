@@ -48,12 +48,12 @@ serve(async (req) => {
     // Send email notification using Resend
     const emailData = {
       to: 'support@tradecenfxvip.com', // Your support email
-      from: 'noreply@tradecenfxvip.com', // Your sending email
+      from: 'TradeCentralFX <noreply@tradecenfxvip.com>', // Your sending email with display name
       subject: `New Contact Form Submission: ${subject}`,
       html: `
         <div style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
           <div style="background-color: #002A2B; padding: 24px; border-radius: 8px 8px 0 0;">
-            <h2 style="color: #ffffff; margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.96px;">New Contact Form Submission</h2>
+            <h2 style="color: #ffffff; margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.96px;">TradeCentralFX Contact Form</h2>
           </div>
           
           <div style="padding: 24px; border: 1px solid #e5e7eb; border-top: none;">

@@ -118,10 +118,10 @@
                             <h2 style="color: black; font-family: 'Inter', sans-serif; font-size: 28px; letter-spacing: -0.96px; font-weight: 600; line-height: 33.6px; margin-bottom: 16px;">
                                 Message Sent Successfully!
                             </h2>
-                            <p style="color: #666666; font-family: 'Inter', sans-serif; font-size: 16px; line-height: 24px; font-weight: 400; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto;">
+                            <p style="color: #666666; font-family: 'Inter', sans-serif; font-size: 16px; line-height: 24px; font-weight: 400; max-width: 400px; margin-left: auto; margin-right: auto;">
                                 Thank you for contacting us. We've received your message and will get back to you within 24 hours.
                             </p>
-                            <button onclick="resetForm()" 
+                            <button type="button" onclick="resetForm()"
                                     class="text-white font-semibold px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2"
                                     style="background-color: #009296; font-size: 14px; font-weight: 500;">
                                 Send Another Message
@@ -279,6 +279,18 @@
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
             
+            // Validate form fields
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            // Check if any field is empty
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all fields before submitting.');
+                return;
+            }
+            
             // Show loading state
             const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = 'Sending...';
@@ -287,10 +299,10 @@
             try {
                 // Create form data object
                 const formData = {
-                    full_name: document.getElementById('name').value,
-                    email: document.getElementById('email').value,
-                    subject: document.getElementById('subject').value,
-                    message: document.getElementById('message').value
+                    full_name: name,
+                    email: email,
+                    subject: subject,
+                    message: message
                 };
                 
                 // Submit to Supabase Edge Function
@@ -324,12 +336,27 @@
             }
         });
         
-        // Reset form function
-        function resetForm() {
+        // Reset form function - prevents auto-submission
+        function resetForm(e) {
+            // Prevent any form submission if event is provided
+            if (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            
+            // Reset form fields
             form.reset();
+            
+            // Show form and hide confirmation
             form.style.display = 'block';
             confirmationScreen.classList.add('hidden');
+            
+            // Reset button state
             submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Send Message <i data-lucide="send" class="w-4 h-4"></i>';
+            
+            // Reinitialize icons
+            lucide.createIcons();
         }
     </script>
 </body>
