@@ -51,26 +51,30 @@ serve(async (req) => {
       from: 'noreply@tradecenfxvip.com', // Your sending email
       subject: `New Contact Form Submission: ${subject}`,
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #009296;">New Contact Form Submission</h2>
-          
-          <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3 style="color: #333; margin-top: 0;">Contact Details</h3>
-            <p><strong>Name:</strong> ${full_name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Subject:</strong> ${subject}</p>
-            <p><strong>Submitted:</strong> ${new Date().toLocaleString()}</p>
+        <div style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+          <div style="background-color: #002A2B; padding: 24px; border-radius: 8px 8px 0 0;">
+            <h2 style="color: #ffffff; margin: 0; font-size: 24px; font-weight: 600; letter-spacing: -0.96px;">New Contact Form Submission</h2>
           </div>
           
-          <div style="background-color: #fff; padding: 20px; border: 1px solid #e9ecef; border-radius: 8px;">
-            <h3 style="color: #333; margin-top: 0;">Message</h3>
-            <p style="white-space: pre-wrap; line-height: 1.6;">${message}</p>
-          </div>
-          
-          <div style="margin-top: 20px; padding: 15px; background-color: #e7f3ff; border-radius: 8px;">
-            <p style="margin: 0; color: #0066cc; font-size: 14px;">
-              <strong>Reply to:</strong> <a href="mailto:${email}" style="color: #009296;">${email}</a>
-            </p>
+          <div style="padding: 24px; border: 1px solid #e5e7eb; border-top: none;">
+            <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+              <h3 style="color: #000000; margin: 0 0 16px 0; font-size: 16px; font-weight: 600;">Contact Details</h3>
+              <p style="color: #666666; margin: 8px 0; font-size: 14px; line-height: 22.4px;"><strong style="color: #000000;">Name:</strong> ${full_name}</p>
+              <p style="color: #666666; margin: 8px 0; font-size: 14px; line-height: 22.4px;"><strong style="color: #000000;">Email:</strong> <a href="mailto:${email}" style="color: #009296; text-decoration: none;">${email}</a></p>
+              <p style="color: #666666; margin: 8px 0; font-size: 14px; line-height: 22.4px;"><strong style="color: #000000;">Subject:</strong> ${subject}</p>
+              <p style="color: #666666; margin: 8px 0; font-size: 14px; line-height: 22.4px;"><strong style="color: #000000;">Submitted:</strong> ${new Date().toLocaleString()}</p>
+            </div>
+            
+            <div style="background-color: #ffffff; padding: 20px; border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 20px;">
+              <h3 style="color: #000000; margin: 0 0 16px 0; font-size: 16px; font-weight: 600;">Message</h3>
+              <p style="color: #000000; margin: 0; white-space: pre-wrap; line-height: 22.4px; font-size: 14px; font-weight: 400;">${message}</p>
+            </div>
+            
+            <div style="padding: 16px; background-color: #f8f9fa; border-radius: 8px; border-left: 3px solid #009296;">
+              <p style="margin: 0; color: #000000; font-size: 14px; font-weight: 500;">
+                <strong>Reply to:</strong> <a href="mailto:${email}" style="color: #009296; text-decoration: none; font-weight: 500;">${email}</a>
+              </p>
+            </div>
           </div>
         </div>
       `,
